@@ -1,0 +1,705 @@
+/* estilos.css */
+
+body {
+    background-color: white;
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    font-family: 'Roboto', sans-serif; /* Establece la fuente predeterminada */
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-width: 100%; /* Ajustar imagen al ancho máximo del contenedor */
+}
+
+/* Estilos básicos */
+.navbar {
+    background: linear-gradient(to right, white, white); /* Degradado de izquierda a derecha */
+}
+
+.contenido p {
+    font-size: 1.2rem; 
+    line-height: 1.8rem; 
+    margin-bottom: 1rem; 
+  }
+  
+/* Estilos para el formulario */
+.form_container {
+    margin: auto; /* Centra el contenedor del formulario horizontalmente */
+    max-width: 600px; /* Establece el ancho máximo del contenedor */
+    padding: 20px; /* Agrega espacio interno alrededor del formulario */
+}
+
+.form_form {
+    margin-top: 20px; /* Agrega margen superior al formulario */
+    width: calc(100% - 40px); /* Ancho proporcional al contenedor con márgenes */
+}
+
+
+.privacidad , .depart, .coment, .adjuntar, .telefono{
+    color: #000407;
+    display: block; /* Hace que las etiquetas de formulario sean bloques para ocupar todo el ancho */
+    margin-bottom: 5px; /* Agrega espacio entre etiquetas y campos */
+    font-size: 25px;
+    border: 1px solid #030303; /* Ajusta el grosor del borde a 1px */
+    padding: 20px; /* Añade un espacio interno alrededor del contenido */
+   
+}
+
+.form_checkbox_container {
+    display: flex; /* Utiliza flexbox para alinear elementos en línea */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-bottom: 10px; /* Agrega espacio entre la fila del checkbox y otros elementos */
+}
+
+
+.form_input,
+.form_select,
+.form_textarea {
+    width: 100%; /* Establece el ancho de los campos de entrada al 100% */
+    padding: 8px; /* Agrega relleno interno a los campos */
+    margin-bottom: 10px; /* Agrega espacio entre campos */
+    box-sizing: border-box; /* Hace que el relleno y el borde no aumenten el tamaño total del campo */
+}
+
+.form_submit:hover {
+    background-color: #ff1493;
+}
+
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-links li a, .navbar select {
+    padding: 10px;
+    font-size: 16px; /* Ajusta esto según el tamaño de fuente deseado para el menú */
+    vertical-align: middle;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(89, 99, 194, 0.2); /* Efecto hover mejorado */
+    color: black;
+}
+
+/* Responsividad */
+@media screen and (max-width: 600px) {
+    .nav-links li {
+        float: none;
+    }
+}
+
+.navbar select {
+    background-color: white; /* Coincide con el color de fondo del menú */
+    color: black; /* Coincide con el color del texto del menú */
+    border: 1px solid #ccc; /* Borde sutil para el selector */
+    border-radius: 5px; /* Bordes redondeados para coincidir con el estilo general */
+    margin-left: 20px; /* Espacio entre el selector y el último enlace del menú */
+    cursor: pointer; /* Indica que el selector es interactivo */
+}
+
+@media screen and (max-width: 600px) {
+    .navbar select {
+        width: 100%; /* Asegura que el selector ocupe el ancho disponible */
+    }
+    .nav-links li, .language-switch {
+        float: none; /* Disposición vertical en móviles */
+        text-align: center; /* Centrado de texto en móviles */
+    }
+}
+
+/* Zona del CSS del footer */
+
+.site-footer {
+    background-color: white; /* Color de fondo */
+    color: white; /* Color de texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px 0; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.site-footer .container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* mantener el footer en la parte inferior de la página, incluso con poco contenido: */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+body > .container {
+    flex: 1;
+}
+
+.central, .site-footer, iframe{
+    margin: 0 auto;
+
+}
+
+.central p {
+    font-weight: 500;
+    
+}
+
+/* estilos.css */
+
+/* Estilos para la clase "central" */
+.central {
+    max-width: 800px; /* Ancho máximo para evitar que el contenido se extienda demasiado */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Añade espaciado interno alrededor del contenido */
+    background-color: #f9f8fc; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para la clase "central" dentro de la página de detalles del proyecto */
+.central.detalle-proyecto {
+    background-color: #f5f5f5; /* Cambia el color de fondo para distinguirlo */
+}
+
+/* Estilos para la tabla de proyectos */
+.central table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.central table th, .central table td {
+    border: 1px solid #ddd; /* Borde sólido gris claro */
+    padding: 8px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.central table th {
+    background-color: #f2f2f2; /* Color de fondo para las celdas del encabezado */
+}
+
+.central table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo para filas pares */
+}
+
+/* Estilos para los enlaces dentro de la tabla de proyectos */
+.central table a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #007bff; /* Color azul para los enlaces */
+}
+
+.central table a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+}
+
+
+.primero {
+    position: relative; /* Establece la posición relativa */
+}
+
+/* Estilos para el pseudo-elemento ::after de .primero */
+.primero::before,
+.primero::after {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posición absoluta */
+    bottom: 0; /* Alinea la línea horizontal en la parte inferior */
+    left: 0; /* Alinea la línea horizontal al extremo izquierdo */
+    width: 100%; /* Ancho completo */
+    height: 1px; /* Grosor de la línea horizontal */
+    background-color: #ccc; /* Color de la línea horizontal */
+}
+
+primero::before {
+    top: 0; /* Alinea la línea horizontal en la parte superior */
+}
+
+/* Estilos para el pseudo-elemento ::after de .primero */
+.primero::after {
+    bottom: 0; /* Alinea la línea horizontal en la parte inferior */
+}
+
+
+.central19 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añadir espacio alrededor del contenido */
+    height: 300px; /* Ajustar la altura del contenedor */
+    width: 80%; /* Ajustar el ancho del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+
+
+.product {
+    
+      margin-top: 7rem;
+    text-align: center;
+}
+
+.product:hover{
+    background-color: #037bc0;
+    color: white;
+    border-bottom-right-radius: 1rem;
+}
+
+.bodycomp {
+    font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+}
+
+.h1S4HANA{
+    font-size: 3rem;
+            margin-bottom: 1.5rem;
+}
+
+.containercomp {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.featcomp {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+H22 S4HANA{
+    font-size: 3rem;
+            margin-bottom: 1.5rem;
+}
+
+
+.P S4HANA {
+    font-size: 1.4rem;
+}
+
+.tit4hana {
+    color: #000407;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Establece la altura del contenedor al 100% del viewport */
+}
+
+
+
+.ctaoficina{
+    text-align: center;
+    margin-top: 3rem;
+    display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+}
+
+.cv {
+    color: #030303; /* Cambia el color del texto a negro */
+    font-size: 28px; /* Ajusta el tamaño de fuente a tu preferencia */ 
+}
+
+.form_input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+
+.form_checkbox {
+    margin-right: 5px; /* Agrega margen derecho al checkbox */
+    margin-top: 5px;
+    
+}
+
+.form_select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+
+.form_textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form_submit {
+    width: auto; /* Establece el ancho automático del botón de envío */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form {
+    background-color:#787476; /* Color de fondo suave */
+    padding: 20px; /* Espacio alrededor del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.contact-form h3 {
+    margin-bottom: 10px; /* Espacio inferior para separar el título del formulario */
+}
+
+.contact-form form {
+    margin-top: 10px; /* Espacio superior para separar el formulario de su título */
+}
+
+.contact-form label {
+    display: block; /* Convertir las etiquetas de nombre de campo en bloques para facilitar la visualización */
+    margin-bottom: 5px; /* Espacio inferior entre etiqueta y campo */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Espacio interno */
+    margin-bottom: 10px; /* Espacio inferior entre campos */
+    border: 1px solid #11010a; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espacio interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Cambio de color de fondo al pasar el ratón */
+}
+
+
+
+/* Le aplicamos GRID */
+
+.contenedor-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Separación entre las imágenes */
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Altura de cada tarjeta */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(153, 33, 79);
+}
+button:hover{
+    background-color: rgb(73, 26, 117);
+}
+
+
+
+
+/* Nuestros servicios */
+.programas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carta {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4e1e1; /* Rosa claro */
+}
+
+.carta h3 {
+    margin-top: 0;
+    color: #333; /* Negro */
+}
+
+.carta p {
+    margin-bottom: 10px;
+    color: #666; /* Gris oscuro */
+}
+
+button {
+    background-color: #e93790; /* Rosa intenso */
+    color: #fff; /* Blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d450a4; 
+}
+
+
+.nuestros-servicios {
+    color: #0e0007; /* Color para el texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: auto; /* Centra el bloque en la pantalla */
+}
+
+
+.fondo {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 400px; /* Ancho  */
+}
+
+
+
+.projects-container {
+    display: flex; /* Utiliza flexbox para alinear horizontalmente los proyectos */
+    justify-content: center; /* Centra horizontalmente los proyectos */
+    align-items: center; /* Centra verticalmente los proyectos */
+    gap: 20px; /* Espacio entre los proyectos */
+    margin-bottom: 50px;
+}
+
+.cl1,
+.cl2 {
+    max-width: 400px; /* Establece el ancho máximo del contenedor */
+    padding: 20px; /* Agrega espacio interno alrededor del contenido */
+    background-color: #e7d7e1; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(81, 23, 148, 0.1); /* Sombra suave */
+    text-align: center; /* Centra el contenido de texto horizontalmente */
+}
+
+
+/* Estilos para la imagen dentro de .cl2 */
+.cl2 img {
+    display: block; 
+    margin: 0 auto; /* se centra la imagen horizontalmente */
+}
+
+.fondoformulario {
+    background-image: url('https://st.depositphotos.com/1269993/2653/i/950/depositphotos_26535049-stock-photo-beige-paper-texture-light-background.jpg');
+    background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+}
+
+
+/* ----- FOOTER(común) ----- */
+
+footer {
+    width: 100%; 
+    background-color: #1a0e14; /* Cambia el color de fondo a rosa */
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 50px 0;
+}
+
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.footerColumn {
+    flex-basis: 30%;
+    color: white;
+    
+}
+
+.footerColumn h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footerColumn ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.footerColumn li {
+    margin-bottom: 15px;
+}
+
+.footerColumn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------- */
+
+.footerColumn .satisfaccion a {
+    display: inline-block;
+    text-decoration: none;
+    /* BORRA EL SUBRAYDAO Q VIENE X DEFECTO */
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #0a141d;
+    text-align: center;
+    transition: all 300ms ease;
+    
+
+}
+
+
+.footerColumn .redSocial a {
+    color: aqua;
+    /* COLOR IMAGENES(tw, inst, yt) */
+
+}
+
+
+/* BARRA HORIZONTAL ABAJO DEL HEADER */
+.copyright {
+    background-color: #282727;
+    padding: 15px 10px;
+    /*PARA QUE SEA HORIZONTAL LA BARRA */
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.contenedor {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    
+  }
+  
+  .contenido {
+    max-width: 600px; /* Ancho máximo del contenido */
+    margin: auto; /* Centrar horizontalmente */
+  }
+  
+
+  /* Estilos para la tabla de proyectos */
+  .disponibilidad {
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    max-width: 100%; /* La tabla ocupará el ancho máximo posible */
+    width: 80%; /* Tamaño relativo de la tabla */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/009/751/175/non_2x/blue-background-dark-blue-abstract-background-geometry-shine-and-layer-element-for-presentation-design-free-vector.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    padding: 20px; /* Espacio interno para evitar que el contenido se superponga a la imagen de fondo */
+    margin-bottom: 50px; /* Espacio debajo de la tabla */
+}
+
+.disponibilidad h2 {
+    margin-top: 50px; /* Espacio superior para el título */
+    margin-bottom: 20px; /* Espacio inferior para el título */
+    color: white; /* Color del texto del título */
+}
+
+.contenidotabla {
+    color: white;
+}
+
+.disponibilidad table {
+    width: 100%; /* La tabla ocupa todo el ancho disponible */
+    border-collapse: separate; /* Se separan los bordes de las celdas */
+    border-spacing: 10px; /* Espacio entre las celdas */
+}
+
+.disponibilidad th,
+.disponibilidad td {
+    padding: 10px; /* Espacio interno de las celdas */
+    text-align: center; /* Centra el contenido horizontalmente */
+    border: 1px solid #ddd; /* Borde de las celdas */
+}
+
+.disponibilidad th {
+    background-color: #f2f2f2; /* Color de fondo para las celdas de encabezado */
+}
+
+
+
+.mapa {
+    display: block;
+    margin: 0 auto;
+    width: 80%; /* Ajusta el tamaño del mapa según sea necesario */
+    height: 450px; /* Establece la altura fija del mapa */
+}
+
+.form-container {
+    margin-right: 20px; /* Margen a la derecha */
+    margin-bottom: 20px; /* Margen por debajo */
+}
+
+
+input {
+    display: block; /* Hace que cada elemento ocupe su propia línea */
+    margin-bottom: 10px; /* Agrega un margen en la parte inferior de cada elemento */
+  }
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arquimart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+
+<header class="headercomp">
+    <div class="primero"> <!--PADRE-->
+        <div class="unouno"> <!--HIJO Nº1-->
+            <a href="index.html"><img src = "/OrekaIT/img/logo.png" alt ="logo" width="300" height="50"></a>
+        </div>
+        
+        <div class="unodos">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="productos.html">Productos/Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="Noticias.html">Noticias</a></li>
+
+                    <li class="language-switch">
+                        <select class="language-switch" onchange="location = this.value;">
+                            <option value="index.html">Español</option>
+                            <option value="index_eus.html">Euskera</option>
+                            <option value="index_eng.html">English</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<body class="bodycomp">
+    
+        </h1 class="tit4hana"> Nuestra compartimentación de oficinas</h1>
+        <p class="tit4hana">Transformamos tus espacios de trabajo en entornos innovadores y funcionales, diseñados para maximizar la productividad y el bienestar. Ofrecemos soluciones personalizadas de mobiliario, mamparas y sistemas de compartimentación que se adaptan a las necesidades específicas de tu empresa, creando ambientes que combinan diseño, tecnología y confort.</p>
+
+    <div class="containercomp">
+        <div class="feature">
+            <h2 class="h2comp">Propuestas de ambientes innovadores</h2>
+            <p>En Arquimart diseñamos respuestas capaces de crear espacios innovadores donde el confort y la tecnología cobran un especial protagonismo. Zonas de trabajo o encuentro que priorizan la luz natural, capaces de incorporar cualquier sistema de telecomunicación o actividad en remoto, aisladas por completo a través de acristalamientos y materiales nobles en busca de mayor intimidad y abiertas o semiabiertas cuando la transparencia lo es todo.
+            </p>
+        </div>
+
+        <div class="featcomp">
+            <h2>Mamparas </h2>
+            <p>Todos nuestros modelos en mamparas para dividir oficinas son personalizables e incluyen diferentes espesores. Nuestro equipo ajustará cualquiera de ellas a las medidas, formas y acabados que necesites.
+            </p>
+        </div>
+
+        <div class="featureh2comp">
+            <h2 class="H22 S4HANA">Armarios tabique</h2>
+            <p class="P S4HANA">Nuestros Armario T es tu solución a la compartimentación efectiva de ambientes de trabajo sin perder por ello capacidad de archivo. Optimiza el espacio disponible en tu oficina y aporta un plus en diseño estético con nuestras soluciones en sistemas de clasificación y separación de zonas de trabajo a través de este elemento de mobiliario.</p>
+        </div>
+
+        <div class="ctaoficina">
+            <a href="https://es.wikipedia.org/wiki/Oficina">Descubre más sobre SAP S/4HANA</a>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footerContainer">
+        <div class="footerColumn">
+            <h3>Web</h3>
+            <!-- ÍNDICE DA LA IZQ QUE LLEVA A OTRAS PÁGINAS HTML -->
+            <ul>
+                <li><a href="inicio.html" target="_blank">Inicio</a></li>
+                <li><a href="info.html" target="_blank">Acerca de nosotros</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                <li><a href="productos.html" target="_blank">Productos</a></li> 
+            </ul>
+        </div>
+        
+        <div class="footerColumn">
+            <!-- COLUMNA DEL MEDIO -->
+            <h3>Dirección</h3>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i>Polígono Industrial Ansoleta, Aitzgorri, 6, Vitoria-Gasteiz</li>
+                <li><i class="fas fa-phone"></i> Número de teléfono: 123456789</li>
+                <li><i class="fas fa-envelope"></i> Correo electrónico: oreka@oreka.eus</li>
+            </ul>
+        </div>
+        <div class="footerColumn">
+            <!-- COLUMNA DE LA DERECHA -->
+            <h3>Nivel de satisfacción con nuestra web</h3>
+            <div class="satisfaccion">
+                <a class="muymal"> <img src="img/muymal.jpg" alt="muymal"></a>
+                <a  class="regular"><img src="img/regular.jpg" alt="regular"></a>
+                <a  class="bien"><img src="img/bien.jpg" alt="bien"></a>
+                <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
+            </div>
+            <script>
+                // Obtener todas las imágenes
+                const imagenes = document.querySelectorAll('.satisfaccion img');
+        
+                // Función para mostrar el mensaje
+                function mostrarMensaje() {
+                    alert("Gracias por tu valoración");
+                }
+        
+                // Agregar evento de clic a cada imagen
+                imagenes.forEach(imagen => {
+                    imagen.addEventListener('click', mostrarMensaje);
+                });
+            </script>
+        </div>
+    </div>
+    <div class="copyright">
+        <!-- &copy: es el símbolo de copyright  -->
+        <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
+    </div>
+
+</footer>
+
+
+</html>
