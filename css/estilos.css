@@ -703,3 +703,16 @@ input {
     margin-bottom: 10px; /* Agrega un margen en la parte inferior de cada elemento */
   }
 
+  .footerMap {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    margin-top: 1.25rem; /* Equivalente a 20px si 1rem = 16px */
+}
+
+.footerMap iframe {
+    width: 80%; /* Ajusta el ancho del mapa */
+    max-width: 37.5rem; 
+    height: 25rem; 
+    border: none; /* Elimina el borde del iframe */
+}
