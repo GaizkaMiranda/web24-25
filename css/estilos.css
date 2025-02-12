@@ -507,12 +507,28 @@ button:hover {
 
 
 .projects-container {
-    display: flex; /* Utiliza flexbox para alinear horizontalmente los proyectos */
-    justify-content: center; /* Centra horizontalmente los proyectos */
-    align-items: center; /* Centra verticalmente los proyectos */
-    gap: 20px; /* Espacio entre los proyectos */
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center; 
+    gap: 60px; 
+    margin: auto; /* Centra horizontalmente */
 }
+
+.proyecto-img {
+    width: 100%; /* O un valor fijo como 250px */
+    height: 150px; /* O usa auto si quieres mantener la proporción */
+    object-fit: cover; /* Para que la imagen se recorte y no se deforme */
+    border-radius: 5px; /* Opcional, para esquinas redondeadas */
+
+}
+
+.img-fabrica {
+    display: block;
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+    max-width: 80%; /* Ajusta el tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5px; /* Opcional, para esquinas redondeadas */
+}
+
 
 .cl1,
 .cl2 {
@@ -546,13 +562,14 @@ button:hover {
 }
 
 
-/* ----- FOOTER(común) ----- */
+/* ----- FOOTER comun ----- */
 
 footer {
-    width: 100%; 
-    background-color: #1a0e14; /* Cambia el color de fondo a rosa */
-    color: white; /* Cambia el color del texto a blanco */
-    padding: 50px 0;
+    background-color: #1a0e14; 
+    text-align: center;
+    color: white; 
+    padding: 2rem 0;
+    font-size: 1rem;
 }
 
 
