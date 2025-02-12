@@ -251,8 +251,6 @@ primero::before {
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
 }
 
-
-
 .product {
     
       margin-top: 7rem;
@@ -457,6 +455,8 @@ button:hover{
     justify-content: space-between;
 }
 
+
+
 .carta {
     flex: 1;
     margin: 0 10px;
@@ -534,7 +534,7 @@ button:hover {
 .cl2 {
     max-width: 400px; /* Establece el ancho máximo del contenedor */
     padding: 20px; /* Agrega espacio interno alrededor del contenido */
-    background-color: #e7d7e1; /* Color de fondo */
+    background-color: #837d59; /* Color de fondo */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(81, 23, 148, 0.1); /* Sombra suave */
     text-align: center; /* Centra el contenido de texto horizontalmente */
@@ -548,7 +548,7 @@ button:hover {
 }
 
 .fondoformulario {
-    background-image: url('https://st.depositphotos.com/1269993/2653/i/950/depositphotos_26535049-stock-photo-beige-paper-texture-light-background.jpg');
+    background-image: url('https://arquimart.es/wp-content/uploads/2021/04/arquimart.jpg');
     background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -609,6 +609,26 @@ footer {
     text-decoration: none;
 }
 
+.contenedor-años {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+}
+.contenedor-años div {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.año2010, .año2014, .año2018 {
+    background-color: #f0f0f0;
+    text-align: right;
+}
+.año2012, .año2016 {
+    background-color: #837d59;
+    text-align: left;
+}
+
 /* --------------------------------------------------------------------- */
 
 .footerColumn .satisfaccion a {
@@ -666,7 +686,7 @@ footer {
     max-width: 100%; /* La tabla ocupará el ancho máximo posible */
     width: 80%; /* Tamaño relativo de la tabla */
     text-align: center; /* Centra el texto dentro del contenedor */
-    background-image: url('https://static.vecteezy.com/system/resources/previews/009/751/175/non_2x/blue-background-dark-blue-abstract-background-geometry-shine-and-layer-element-for-presentation-design-free-vector.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/fondodisponibilidad.png'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Cubre todo el contenedor */
     background-repeat: no-repeat; /* No se repite la imagen */
     padding: 20px; /* Espacio interno para evitar que el contenido se superponga a la imagen de fondo */
