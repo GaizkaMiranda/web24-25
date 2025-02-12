@@ -1,121 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="UTF-8">
-      <title>Sistemas Arquimart</title>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/estilos.css">
-      <link rel="icon" type="image/x-icon" href="/img/logo.png">
-   </head>
-   <header>
-      <div class="primero">
-        
-         <div class="unouno">
-           
-            <a href="index.html"><img src = "/img/inicio-arquimart.png" alt ="logo" width="300" height="50"></a>
-         </div>
-         <div class="unodos">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemas Arquimart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+</head>
+<header>
+    <div class="primero">
+
+        <div class="unouno">
+
+            <a href="index.html"><img src="/img/inicio-arquimart.png" alt="logo" width="300" height="50"></a>
+        </div>
+        <div class="unodos">
             <nav class="navbar">
-               <ul class="nav-links">
-                  <li><a href="index.html">Inicio</a></li>
-                  <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                  <li><a href="productos.html">Productos/Servicios</a></li>
-                  <li><a href="contacto.html">Contacto</a></li>
-                  <li class="language-switch">
-                     <select class="language-switch" onchange="location = this.value;">
-                        <option value="index.html">Español</option>
-                        <option value="eus/index_eus.html">Euskera</option>
-                        <option value="eng/index_eng.html">English</option>
-                     </select>
-                  </li>
-               </ul>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="productos.html">Productos/Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="language-switch">
+                        <select class="language-switch" onchange="location = this.value;">
+                            <option value="index.html">Español</option>
+                            <option value="eus/index_eus.html">Euskera</option>
+                            <option value="eng/index_eng.html">English</option>
+                        </select>
+                    </li>
+                </ul>
             </nav>
-         </div>
-      </div>
-   </header>
-   <body>
-      <div class="central19">
-         <img src="img/inicio-arquimart.png" alt="inicio-arquimart">
-      </div>
-      <section>
-      <div class="contenedorinicio">
-         <article class="contenido contenedor">
-         
-            <p>Diseñamos y fabricamos mamparas, cerramientos y mobiliario especial; divisiones de oficinas y sistemas de compartimentación de interiores concebidos para aumentar el confort en el área de trabajo.</p>
-            <img src="img/productos-propios.png" alt="productos-propios">
-            <h2>Quiero formar parte de Sistemas arquimart </h2>        
-         
-      </article>
-      </div>
-   </section>
-      <div class="fondoformulario">
-         <div class="form-container">
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="central19">
+        <img src="img/inicio-arquimart.png" alt="inicio-arquimart">
+    </div>
+    <section class="sectionindice">
+        <div class="contenedorinicio">
+            <article class="articulo1">
+
+                <p>Diseñamos y fabricamos mamparas, cerramientos y mobiliario especial; divisiones de oficinas y sistemas de compartimentación de interiores concebidos para aumentar el confort en el área de trabajo.</p>
+                <ul>
+                    <li>Biombos</li>
+                    <li>Divisiones</li>
+                    <li>Mamparas</li>
+                    <li>Maquetas</li>
+                </ul>
+                <img class="img1" src="img/indicearticulo3.jpg" alt="biombo">
+                <img class="img2" src="img/productos-propios.png" alt="productos-propios">
+                <img class="img3" src="img/indice-articulo4.jpg" alt="productos-propios">
+
+
+            </article>
+            <article class="articulo2">
+                <p> <strong>Propuestas de ambientes innovadores.</strong> En Arquimart diseñamos respuestas capaces de crear espacios innovadores donde el confort y la tecnología cobran un especial protagonismo. Zonas de trabajo o encuentro que priorizan
+                    la luz natural, capaces de incorporar cualquier sistema de telecomunicación o actividad en remoto, aisladas por completo a través de acristalamientos y materiales nobles en busca de mayor intimidad y abiertas o semiabiertas cuando
+                    la transparencia lo es todo.</p>
+                <img class="img4" src="img/ind-article2.jpg" alt="productos-propios">
+            </article>
+        </div>
+    </section>
+    <h2 class="h2indice">Quiero formar parte de Sistemas Arquimart </h2>
+    <div class="fondoformulario">
+        <div class="form-container">
             <form action="/submit_form" method="post" class="form_form">
-               <label for="suscripcion" class="privacidad">Acepto la política de privacidad de Sistemas Arquimart</label>
-               <div class="form_checkbox_container">
-                  <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox">
-               </div>
-               <label for="dni">DNI:</label>
-               <input type="text" id="dni" name="dni" placeholder="Por favor, ingrese su DNI">
-               <label for="dep" class="depart">Departamento:</label>
-               <select id="dep" name="dep" class="form_select">
-                  <option value="sis">Sistemas</option>
-                  <option value="pma">Peón Madera</option>
-                  <option value="pme">Peón Metal</option>
-                  <option value="tec">Técnico</option>
-                  <option value="Ad">Administración</option>
-                  <option value="Otro">Otro</option>
-               </select>
-               <br><br>
-               <label>Género:</label><br>
-               <label for="masc">Másculino</label>
-               <input type="radio" id="masc" name="gen" value="masc"><br>
-               <label for="fem">Femenino</label>
-               <input type="radio" id="fem" name="gen" value=",fem"><br>
-               <label for="comentario">Comentario:</label><br>
-               <textarea id="comentario" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea>
-               <br>
-               <label for="pdf" class="adjuntar">Adjuntar PDF:</label>
-               <input type="file" id="pdf" name="pdf" class="form_input"><br><br>
-               <input type="submit" value="Enviar" class="form_submit">
+                <label for="suscripcion" class="privacidad">Acepto la política de privacidad de Sistemas Arquimart</label>
+                <div class="form_checkbox_container">
+                    <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox">
+                </div>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" placeholder="Por favor, ingrese su DNI">
+                <label for="dep" class="depart">Departamento:</label>
+                <select id="dep" name="dep" class="form_select">
+                    <option value="sis">Sistemas</option>
+                    <option value="pma">Peón Madera</option>
+                    <option value="pme">Peón Metal</option>
+                    <option value="tec">Técnico</option>
+                    <option value="Ad">Administración</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <br>
+                <br>
+                <label>Género:</label>
+                <br>
+                <label for="masc">Másculino</label>
+                <input type="radio" id="masc" name="gen" value="masc">
+                <br>
+                <label for="fem">Femenino</label>
+                <input type="radio" id="fem" name="gen" value=",fem">
+                <br>
+                <label for="comentario">Comentario:</label>
+                <br>
+                <textarea id="comentario" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea>
+                <br>
+                <label for="pdf" class="adjuntar">Adjuntar PDF:</label>
+                <input type="file" id="pdf" name="pdf" class="form_input">
+                <br>
+                <br>
+                <input type="submit" value="Enviar" class="form_submit">
             </form>
-         </div>
-      </div>
-      <footer>
-         <div class="footerContainer">
+        </div>
+    </div>
+    <footer>
+        <div class="footerContainer">
             <div class="footerColumn">
-               <h3>Web</h3>
-               <ul>
-                  <li><a href="inicio.html" target="_blank">Inicio</a></li>
-                  <li><a href="info.html" target="_blank">Acerca de nosotros</a></li>
-                  <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                  <li><a href="productos.html" target="_blank">Productos</a></li>
-               </ul>
+                <h3>Web</h3>
+                <ul>
+                    <li><a href="inicio.html" target="_blank">Inicio</a></li>
+                    <li><a href="info.html" target="_blank">Acerca de nosotros</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                    <li><a href="productos.html" target="_blank">Productos</a></li>
+                </ul>
             </div>
             <div class="footerColumn">
-               
-               <h3>Dirección</h3>
-               <ul>
-                  <li><i class="fas fa-map-marker-alt"></i> Polígono Industrial Ansoleta, Aitzgorri, 6, Vitoria-Gasteiz </li>
-                  <li><i class="fas fa-phone"></i> Número de teléfono: 123456789</li>
-                  <li><i class="fas fa-envelope"></i> Correo electrónico: arquimart@arquimart.eus</li>
-               </ul>
+
+                <h3>Dirección</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Polígono Industrial Ansoleta, Aitzgorri, 6, Vitoria-Gasteiz </li>
+                    <li><i class="fas fa-phone"></i> Número de teléfono: 123456789</li>
+                    <li><i class="fas fa-envelope"></i> Correo electrónico: arquimart@arquimart.eus</li>
+                </ul>
             </div>
             <div class="footerColumn">
-               <h3>Nivel de satisfacción con nuestra web</h3>
-               <div class="satisfaccion">
-                  <a class="muymal"> <img src="img/muymal.jpg" alt="muymal"></a>
-                  <a  class="regular"><img src="img/regular.jpg" alt="regular"></a>
-                  <a  class="bien"><img src="img/bien.jpg" alt="bien"></a>
-                  <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
-               </div>
+                <h3>Nivel de satisfacción con nuestra web</h3>
+                <div class="satisfaccion">
+                    <a class="muymal"> <img src="img/muymal.jpg" alt="muymal"></a>
+                    <a class="regular"><img src="img/regular.jpg" alt="regular"></a>
+                    <a class="bien"><img src="img/bien.jpg" alt="bien"></a>
+                    <a class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
+                </div>
             </div>
-         </div>
-         <div class="copyright">
+        </div>
+        <div class="copyright">
             <!-- &copy: es el símbolo de copyright  -->
             <small>&copy;2024 <b>Sistemas Arquimart</b> - Página oficial Sistemas Arquimart</small>
-         </div>
-      </footer>
-   </body>
+        </div>
+    </footer>
+</body>
 
 </html>
