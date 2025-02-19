@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>Oreka IT - Contact</title>
+    <title>Arquimart- Contact</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
 </head>
-
-
 <header>
-    <div class="first"> <!--PARENT-->
-        <div class="one-one"> <!--CHILD No.1-->
-            <a href="index.html"><img src = "/OrekaIT/img/logo.png" alt ="logo" width="300" height="50"></a>
+    <div class="primero">
+        <!--PADRE-->
+        <div class="unouno">
+            <!--HIJO Nº1-->
+            <a href="index.html"><img src="/img/inicio-arquimart.png" alt="logo" width="300" height="50"></a>
         </div>
-        
         <div class="unodos">
             <nav class="navbar">
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="nosotros_eng.html">About Us</a></li>
-                    <li><a href="productos_eng.html">Products/Services</a></li>
-                    <li><a href="contacto_eng.html">Contact</a></li>
-
-                    <li class="language-switch">
-                        <select class="language-switch" onchange="location = this.value;">
-                            <option value="../contacto.html">Spanish</option>
-                            <option value="../eus/contacto_eus.html">Basque</option>
-                            <option value="../eng/contacto_eng.html">English</option>
+                    <li><a href="/eng/index_eng.html">Index</a></li>
+                    <li><a href="/eng/nosotros_eng.html">About Us</a></li>
+                    <li><a href="/eng/productos_eng.html">Products/Services</a></li>
+                    <li><a href="/eng/contacto_eng.html">Contact</a></li>
+                    <li class="idioma">
+                        <select class="idioma" onchange="location = this.value;">
+                            <option value="/contacto.html">Español</option>
+                            <option value="/eus/contacto_eus.html">Euskera</option>
+                            <option value="/eng/contacto_eng.html">English</option>
                         </select>
                     </li>
                 </ul>
@@ -37,106 +35,71 @@
     </div>
 </header>
 
-
 <body>
-
-
     <nav class="navbar">
-        <!-- Navigation menu -->
+        <!-- Menú de navegación -->
     </nav>
-
     <div class="central">
         <h2>Contact</h2>
         <div class="contact-info">
-            <!-- Contact information -->
-            <p><strong>Address:</strong> Guachupa Street, 14, Vitoria-Gasteiz, Basque Country</p>
-            <p><strong>Phone:</strong> +34 123 456 789</p>
-            <p><strong>Email:</strong> info@orekait.com</p>
-            <p><strong>Hours:</strong> Monday to Friday: 8:00 AM - 6:00 PM</p>
+            <!-- Información de contacto -->
+            <p><strong>Dirección:</strong>Polígono Industrial Ansoleta, Aitzgorri, 6, Vitoria-Gasteiz</p>
+            <p><strong>Teléfono:</strong> +34 123 456 789</p>
+            <p><strong>Correo Electrónico:</strong> arquimart@arquimart.com</p>
         </div>
-
         <div class="contact-form">
-            <!-- Contact form -->
-            <h3>Send us a message</h3>
-            <form action="send_message.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
+            <!-- Formulario de contacto -->
+            <h3>Send a message</h3>
+            <form action="enviar_mensaje.php" method="post">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Gmail adrress:</label>
                 <input type="email" id="email" name="email" required>
-        
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
-        
-                <label for="birthdate">Birthdate:</label>
-                <input type="date" id="birthdate" name="birthdate" required>
-        
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-        
-                <input type="submit" value="Send">
+                <label for="telefono">Phone number:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <label for="mensaje">Note:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                <input type="submit" value="Enviar">
             </form>
         </div>
-        
-
-        
     </div>
-
     <footer>
         <div class="footerContainer">
             <div class="footerColumn">
-                <h3>Website</h3>
-                <!-- INDEX TO THE LEFT THAT LEADS TO OTHER HTML PAGES -->
+                <h3>Web</h3>
+                <!-- ÍNDICE DA LA IZQ QUE LLEVA A OTRAS PÁGINAS HTML -->
                 <ul>
-                    <li><a href="index.html" target="_blank">Home</a></li>
-                    <li><a href="about.html" target="_blank">About Us</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
-                    <li><a href="products.html" target="_blank">Products</a></li> 
-                </ul>
-            </div>
-            
-            <div class="footerColumn">
-                <!-- MIDDLE COLUMN -->
-                <h3>Address</h3>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Industry Street, Vitoria-Gasteiz </li>
-                    <li><i class="fas fa-phone"></i> Phone Number: +34 123 456 789</li>
-                    <li><i class="fas fa-envelope"></i> Email: oreka@oreka.eus</li>
+                    <li><a href="inicio.html" target="_blank">Inicio</a></li>
+                    <li><a href="info.html" target="_blank">Acerca de nosotros</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                    <li><a href="productos.html" target="_blank">Productos</a></li>
                 </ul>
             </div>
             <div class="footerColumn">
-                <!-- RIGHT COLUMN -->
-                <h3>Satisfaction Level with Our Website</h3>
-                <div class="satisfaction">
-                    <a class="verybad"> <img src
-                        <a  class="regular"><img src="img/regular.jpg" alt="regular" ></a>
-                        <a  class= "bien" ><img src="img/bien.jpg" alt="bien"></a>
-                        <a  class="muybien"><img src="img/muybien.jpg" alt="muybien"></a>
-                    </div>
+                <h3>Adress</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Polígono Industrial Ansoleta, Aitzgorri, 6, Vitoria-Gasteiz</li>
+                    <li><i class="fas fa-phone"></i> Phone number: 123456789</li>
+                    <li><i class="fas fa-envelope"></i> Gmail address: arquimart@arquimart.com</li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <h3>Level of satisfaction</h3>
+                <div class="satisfaccion">
+                    <a class="muymal"> <img src="/img/muymal.jpg" alt="muymal"></a>
+                    <a class="regular"><img src="/img/regular.jpg" alt="regular"></a>
+                    <a class="bien"><img src="/img/bien.jpg" alt="bien"></a>
+                    <a class="muybien"><img src="/img/muybien.jpg" alt="muybien"></a>
                 </div>
             </div>
-            <div class="copyright">
-                <!-- &copy: es el símbolo de copyright  -->
-                <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
-            </div>
-        
-        </footer>
-        
-    
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                var form = document.querySelector('.contact-form form');
-                form.addEventListener('submit', function(event) {
-                    event.preventDefault(); // Prevenir el envío del formulario por defecto
-                    // Aquí puedes agregar cualquier lógica adicional, como enviar los datos del formulario a un servidor mediante AJAX
-                    // Por ahora, simplemente mostraremos un mensaje de agradecimiento
-                    alert('¡Gracias por ponerte en contacto con nosotros! Nos pondremos en contacto contigo pronto.');
-                    form.reset(); // Limpiar el formulario después de enviar
-                });
-            });
-        </script>
-        
-    
-    </body>
-    
-    </html>
+        </div>
+        <div class="copyright">
+            <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
+        </div>
+        <div class="footerMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.965526720332!2d-2.658469823379281!3d42.83134200519652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fe82a528233e9%3A0x674036efd5bcf16a!2sSistemas%20Arquimart!5e0!3m2!1ses!2ses!4v1739123379654!5m2!1ses!2ses"></iframe>
+        </div>
+    </footer>
+</body>
+
+</html>

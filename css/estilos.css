@@ -113,7 +113,7 @@ img {
 @media screen and (max-width: 600px) {
     .navbar select {
         width: 100%;     }
-    .nav-links li, .language-switch {
+    .nav-links li, .idioma {
         float: none;         text-align: center;     }
 }
 

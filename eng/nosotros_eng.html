@@ -3,31 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Oreka IT- About Us</title>
+    <title>Arquimart- About Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
 </head>
-
 <header>
-    <div class="primero"> <!--PARENT-->
-        <div class="unouno"> <!--CHILD Nº1-->
-            <a href="index.html"><img src = "/OrekaIT/img/logo.png" alt ="logo" width="300" height="50"></a>
+    <div class="primero">
+        <!--PADRE-->
+        <div class="unouno">
+            <!--HIJO Nº1-->
+            <a href="index.html"><img src="/img/inicio-arquimart.png" alt="logo" width="300" height="50"></a>
         </div>
-        
         <div class="unodos">
             <nav class="navbar">
                 <ul class="nav-links">
-                    <li><a href="index_eng.html">Home</a></li>
-                    <li><a href="../eng/nosotros_eng.html">About Us</a></li>
-                    <li><a href="../eng/productos_eng.html">Products/Services</a></li>
-                    <li><a href="../eng/contacto_eng.html">Contact</a></li>
-
-                    <li class="language-switch">
-                        <select class="language-switch" onchange="location = this.value;">
-                            <option value="../nosotros.html">Spanish</option>
-                            <option value="../eus/nosotros_eus.html">Basque</option>
-                            <option value="index_eng.html">English</option>
+                    <li><a href="/eng/index_eng.html">Index</a></li>
+                    <li><a href="/eng/nosotros_eng.html">About Us</a></li>
+                    <li><a href="/eng/productos_eng.html">Products/Services</a></li>
+                    <li><a href="/eng/contacto_eng.html">Contact</a></li>
+                    <li class="idioma">
+                        <select class="idioma" onchange="location = this.value;">
+                            <option value="/nosotros.html">Spanish</option>
+                            <option value="/eus/nosotros_eus.html">Basque</option>
+                            <option value="/eng/nosotros_eng.html">English</option>
                         </select>
                     </li>
                 </ul>
@@ -36,22 +35,18 @@
     </div>
 </header>
 
-
-
-<body>    
-
-    <!-- In the "About Us" section -->
+<body>
     <div class="disponibilidad">
-        <h2>Availability</h2>
+        <h2>Disponibility</h2>
         <table>
             <tr>
                 <th>Day</th>
-                <th>Opening Time</th>
-                <th>Closing Time</th>
+                <th>Open time</th>
+                <th>Close time</th>
                 <th>Details</th>
             </tr>
             <tr class="contenidotabla">
-                <td>Monday-Wednesday</td>
+                <td>Monday-Wedensday</td>
                 <td>7:00</td>
                 <td>18:00</td>
                 <td><a href="proyecto_a.html">View details</a></td>
@@ -68,123 +63,128 @@
                 <td>15:00</td>
                 <td><a href="proyecto_c.html">View details</a></td>
             </tr>
-        
         </table>
     </div>
-    
-
-
     <div class="projects-container">
         <div class="cl1">
             <h2>Mercedes Project</h2>
-            <p><strong>Start Date:</strong> 01/01/2023</p>
-            <p><strong>End Date:</strong> 01/12/2024</p>
+            <p><strong>Start:</strong> 01/01/2023</p>
+            <p><strong>Finish:</strong> 01/12/2024</p>
             <p><strong>Contract:</strong> A</p>
-            <p><strong>Description:</strong> SAP implementation for company expense and production management</p>
-            <img src="../img/mercedes.jpg" alt="mercedes">
+            <p><strong>Description:</strong> Design and construction of the office divisions of the main building</p>
+            <img class="proyecto-img" src="/img/mercedes.jpg" alt="mercedes">
         </div>
         <div class="cl2">
-            <h2>Kaiku Project</h2>
-            <p><strong>Start Date:</strong> 01/01/2020</p>
-            <p><strong>End Date:</strong> 31/01/2022</p>
+            <h2>Universidad de Deusto Project</h2>
+            <p><strong>Start:</strong> 01/01/2020</p>
+            <p><strong>Finish:</strong> 31/01/2022</p>
             <p><strong>Contract:</strong> B+</p>
-            <p><strong>Description:</strong> SAP Business One implementation and maintenance for two years</p>
-            <img src="../img/Kaiku_Logo.png" alt="Kaiku">
+            <p><strong>Description:</strong> Design and construction of the soundproofed classroom and office divisions at the Vitoria-Gasteiz engineering headquarters</p>
+            <img class="proyecto-img" src="/img/deusto.png" alt="deusto">
         </div>
         <div class="cl1">
-            <h2>Basque Government</h2>
-            <p><strong>Start Date:</strong> 01/01/2024</p>
-            <p><strong>End Date:</strong> 31/12/2024</p>
-            <p><strong>Contract:</strong> F</p>
-            <p><strong>Description:</strong> Implementation and technical training of staff</p>
-            <img src="../img/logo-gobierno-vasco.jpg" alt="basque-government-logo">
+            <h2>Proyecto estadio de Anoeta</h2>
+            <p><strong>Fecha de Inicio:</strong> 01/01/2024</p>
+            <p><strong>Fecha de Fin:</strong> 31/12/2024</p>
+            <p><strong>Contrato:</strong> F</p>
+            <p><strong>Descripción:</strong> Diseño y construcción de vidrio templado curbo para divisiones de oficina insonorizadas</p>
+            <img class="proyecto-img" src="/img/anoeta.png" alt="logo-anoeta">
         </div>
     </div>
-    
+    <section class="equipo">
+        <h2>Our team</h2>
+        <div class="miembros">
+            <div class="miembro">
+                <img src="persona1.jpg" alt="Juan Pérez">
+                <h3>Juan Pérez</h3>
+                <p>CEO</p>
+            </div>
+            <div class="miembro">
+                <img src="persona2.jpg" alt="Ana Gómez">
+                <h3>Ana Gómez</h3>
+                <p>Project manager</p>
+            </div>
+        </div>
+    </section>
+    <h2> Working since 1957</h2>
 
-    <div class="contenedor">
-        <div class="contenedor-nosotros">
-           <div class="card" style="background-image: url('/OrekaIT/img/oficinadonosti.jpg')">
-               <div class="textos">
-                   <h3>New office in Donostia </h3>
-               </div>
-           </div>
-           <div class="card" style="background-image: url('/OrekaIT/img/plantillaa.jpg')">
-               <div class="textos">
-                   <h3>Staff: we have a team of over 150 consultants</h3>
-               </div>
-           </div>
-           <div class="card" style="background-image: url('/OrekaIT/img/etekin.jpg')">
-               <div class="textos">
-                  
-               </div>
-           </div>
-       
-           <div class="card" style="background-image: url('/OrekaIT/img/practicas.jpg')">
-               <div class="textos">
-                   <h3>Internship</h3>
-                   <p>Start from scratch with a professional</p>
-               </div>
-           </div>
-       </div >
-       </div>
-       
+    <div class="contenedor-años">
+        <div class="año2010">
+            <p><strong>2010.</strong> After eleven years developing engineering projects under the Lorpen brand, Sistemas Arquimart was born, a company with a vocation for innovation and design that aims to revolutionize the concept and manufacturing of systems.
+                compartmentalization and distribution for offices.</p>
+            <p>That same year, Sistemas Arquimart began marketing one of its great products: the Vitrum 35 screen, which immediately became a star product and key to the development of the company. Today, Vitrum 35
+                It is present in some of the facilities of large companies such as BBVA, Bankia, Mapfre, Nestlé, etc.</p>
+        </div>
+
+        <div class="año2012">
+            <p><strong>2012.</strong> Bilbao City Council commissions MB Arquitectos y Sistemas Arquimart with the interior distribution of its new offices in the city. The result: 2,000 meters of installation by the Vitrum 35 model. It was consolidated
+                thus the first major project of the company.</p>
+            <p>A year later, Impuls 100 was born, a modular partition system with excellent acoustic properties and very versatile that has been very well received in the market. Its simplicity and characteristics (high performance, elegance and functionality)
+                They would earn him the immediate recognition of those who opt for minimalism without giving up privacy.</p>
+        </div>
+
+        <div class="año2014">
+            <p><strong>2014.</strong> Aware of the potential of wood as an additional element to metal and glass in spaces dedicated to work and recreation, Sistemas Arquimart embarks on the purchase of a carpentry company and begins
+                to design and manufacture special furniture in this type of material.</p>
+            <p>The incorporation of wood in the design and manufacture of compartmentalization elements allows Sistemas Arquimart to tackle more ambitious and innovative projects. Customized conception and production is now added to the screens and cabinets
+                of stands, visual dividers, ticket offices, offices, exhibitors, etc., designed for meetings and dialogue.</p>
+        </div>
+
+        <div class="año2016">
+            <p><strong>2016.</strong> Aware of the potential of wood as an additional element to metal and glass in spaces dedicated to work and recreation, Sistemas Arquimart embarks on the purchase of a carpentry company and begins
+                to design and manufacture special furniture in this type of material.</p>
+            <p>The incorporation of wood in the design and manufacture of compartmentalization elements allows Sistemas Arquimart to tackle more ambitious and innovative projects. Customized conception and production is now added to the screens and cabinets
+The incorporation of comfortable, friendly and warmer areas in work centers is gaining ground. Arquimart Systems is committed to this new concept of a company that seeks staff satisfaction and is committed to
+                in the design and manufacture of spaces designed to meet these emerging needs.</p>
+            <p>Fully personalized projects, excellent quality and multiple options in types of wood, finishes, etc. become hallmarks of a service that provides optimal solutions to the new demands of the market. This concept
+                In the development of interiors it occupies an increasingly important space within Sistemas Arquimart.</p>
+        </div>
+
+        <div class="año2018">
+            <p><strong>2018.</strong> The design and marketing phase of two new, revolutionary and exclusive products begins: MeetBOX and PhoneBOX, aimed at increasing the privacy and comfort of those large companies that need
+                functional and versatile spaces in which to generate meetings and synergies.</p>
+        </div>
+    </div>
+    <img class="img-fabrica" src="/img/fabrica.jpg" alt="fabrica">
 
 
-        <footer>
-            <div class="footerContainer">
-                <div class="footerColumn">
-                    <h3>Web</h3>
-                    <!-- INDEX TO THE LEFT THAT LEADS TO OTHER HTML PAGES -->
-                    <ul>
-                        <li><a href="home.html" target="_blank">Home</a></li>
-                        <li><a href="about_us.html" target="_blank">About Us</a></li>
-                        <li><a href="contact.html" target="_blank">Contact</a></li>
-                        <li><a href="products.html" target="_blank">Products</a></li> 
-                    </ul>
-                </div>
-                
-                <div class="footerColumn">
-                    <!-- MIDDLE COLUMN -->
-                    <h3>Address</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Zumar Street, Vitoria-Gasteiz </li>
-                        <li><i class="fas fa-phone"></i> Phone number: 123456789</li>
-                        <li><i class="fas fa-envelope"></i> Email: oreka@oreka.eus</li>
-                    </ul>
-                </div>
-                <div class="footerColumn">
-                    <!-- COLUMNA DE LA DERECHA -->
-                    <h3>Nivel de satisfacción con nuestra web</h3>
-                    <div class="satisfaccion">
-                        <a class="muymal"> <img src="../img/muymal.jpg" alt=""></a>
-                        <a  class="regular"><img src="../img/regular.jpg" alt=""></a>
-                        <a  class="bien"><img src="../img/bien.jpg" alt=""></a>
-                        <a  class="muybien"><img src="../img/muybien.jpg" alt=""></a>
-                    </div>
-                    <script>
-                        // Obtener todas las imágenes
-                        const imagenes = document.querySelectorAll('.satisfaccion img');
-                
-                        // Función para mostrar el mensaje
-                        function mostrarMensaje() {
-                            alert("Gracias por tu valoración");
-                        }
-                
-                        // Agregar evento de clic a cada imagen
-                        imagenes.forEach(imagen => {
-                            imagen.addEventListener('click', mostrarMensaje);
-                        });
-                    </script>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerColumn">
+                <h3>Web</h3>
+                <!-- ÍNDICE DA LA IZQ QUE LLEVA A OTRAS PÁGINAS HTML -->
+                <ul>
+                    <li><a href="inicio.html" target="_blank">Inicio</a></li>
+                    <li><a href="info.html" target="_blank">Acerca de nosotros</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                    <li><a href="productos.html" target="_blank">Productos</a></li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <!-- COLUMNA DEL MEDIO -->
+                <h3>Dirección</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Polígono Industrial Ansoleta, Aitzgorri, 6, Vitoria-Gasteiz</li>
+                    <li><i class="fas fa-phone"></i> Número de teléfono: 123456789</li>
+                    <li><i class="fas fa-envelope"></i> Correo electrónico: oreka@oreka.eus</li>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <!-- COLUMNA DE LA DERECHA -->
+                <h3>Nivel de satisfacción con nuestra web</h3>
+                <div class="satisfaccion">
+                    <a class="muymal"> <img src="/img/muymal.jpg" alt="muymal"></a>
+                    <a class="regular"><img src="/img/regular.jpg" alt="regular"></a>
+                    <a class="bien"><img src="/img/bien.jpg" alt="bien"></a>
+                    <a class="muybien"><img src="/img/muybien.jpg" alt="muybien"></a>
                 </div>
             </div>
-            <div class="copyright">
-                <!-- &copy: es el símbolo de copyright  -->
-                <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
-            </div>
-        
-        </footer>
-        
-        
-        </html>
-        
+        </div>
+        <div class="copyright">
+            <!-- &copy: es el símbolo de copyright  -->
+            <small>&copy;2024 <b> Oreka IT</b> - Página oficial Oreka IT</small>
+        </div>
+    </footer>
+</body>
+
+</html>
