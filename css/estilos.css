@@ -19,14 +19,6 @@ img {
 .navbar {
     background: linear-gradient(to right, white, white); }
 
-.contenido p {
-    font-size: 1.2rem; 
-    line-height: 1.8rem; 
-    margin-bottom: 1rem; 
-  }
-  
-.form_container {
-    margin: auto;     max-width: 600px;     padding: 20px; }
 
 .form_form {
     margin-top: 20px;     width: calc(100% - 40px); }
@@ -70,7 +62,7 @@ img {
 .privacidad , .depart, .coment, .adjuntar, .telefono{
     color: #000407;
     display: block;     margin-bottom: 5px;     font-size: 25px;
-    border: 1px solid #030303;     padding: 20px;    
+    padding: 20px;    
 }
 
 .form_checkbox_container {
@@ -83,7 +75,7 @@ img {
     width: 100%;     padding: 8px;     margin-bottom: 10px;     box-sizing: border-box; }
 
 .form_submit:hover {
-    background-color: #ff1493;
+    background-color: #0cd5d5;
 }
 
 
@@ -126,26 +118,12 @@ img {
 }
 
 
-.site-footer {
-    background-color: white;     color: white;     text-align: center;     padding: 20px 0;     font-size: 16px; }
-
-.site-footer .container {
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 html, body {
     height: 100%;
     margin: 0;
 }
 
-
-
-body > .container {
-    flex: 1;
-}
-
-.central, .site-footer, iframe{
+.central,  iframe{
     margin: 0 auto;
 
 }
@@ -159,27 +137,6 @@ body > .container {
 .central {
     max-width: 800px;     margin: 0 auto;     padding: 20px;     background-color: #f9f8fc;     border-radius: 10px;     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);     margin-top: 20px;     margin-bottom: 20px; }
 
-.central.detalle-proyecto {
-    background-color: #f5f5f5; }
-
-.central table {
-    width: 100%;     border-collapse: collapse;     margin-bottom: 20px; }
-
-.central table th, .central table td {
-    border: 1px solid #ddd;     padding: 8px;     text-align: left; }
-
-.central table th {
-    background-color: #f2f2f2; }
-
-.central table tr:nth-child(even) {
-    background-color: #f9f9f9; }
-
-.central table a {
-    text-decoration: none;     color: #007bff; }
-
-.central table a:hover {
-    text-decoration: underline; }
-
 
 .primero {
     position: relative; }
@@ -188,8 +145,6 @@ body > .container {
 .primero::after {
     content: '';     position: absolute;     bottom: 0;     left: 0;     width: 100%;     height: 1px;     background-color: #ccc; }
 
-primero::before {
-    top: 0; }
 
 .primero::after {
     bottom: 0; }
@@ -222,10 +177,6 @@ primero::before {
             line-height: 1.6;
 }
 
-.h1S4HANA{
-    font-size: 3rem;
-            margin-bottom: 1.5rem;
-}
 
 .containercomp {
     max-width: 800px;
@@ -240,22 +191,6 @@ primero::before {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-H22 S4HANA{
-    font-size: 3rem;
-            margin-bottom: 1.5rem;
-}
-
-
-.P S4HANA {
-    font-size: 1.4rem;
-}
-
-.tit4hana {
-    color: #000407;
-    display: flex;
-    justify-content: center;     align-items: center;     height: 100vh; }
-
-
 
 .ctaoficina{
     text-align: center;
@@ -266,11 +201,6 @@ H22 S4HANA{
             padding: 1rem 2rem;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-}
-
-.cv {
-    color: #030303;     font-size: 28px;     margin-top: 5px;
-    
 }
 
 .form_select {
@@ -323,12 +253,6 @@ H22 S4HANA{
 .contact-form input[type="submit"]:hover {
     background-color: #0056b3; }
 
-
-
-
-.contenedor-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);     gap: 20px; }
 
 .card {
     background-size: cover;
@@ -537,12 +461,6 @@ footer {
     transition: all 300ms ease;
     
 
-}
-
-
-.footerColumn .redSocial a {
-    color: aqua;
-    
 }
 
 
