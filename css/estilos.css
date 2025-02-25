@@ -14,19 +14,26 @@ header {
 img {
     max-width: 100%;
     height: auto;
-    max-width: 100%; }
+    max-width: 100%; 
+    border-radius: 40px;
+    /* con border-radius le pongo las esquinas redondeadas https://developer.mozilla.org/es/docs/Web/CSS/border-radius*/
+}
+    
 
 .navbar {
-    background: linear-gradient(to right, white, white); }
+        background-color: white;
+    }
 
 
 .form_form {
-    margin-top: 20px;     width: calc(100% - 40px); }
+    margin-top: 20px;     
+ }
 
 .contenedorinicio {
     display: flex;
     flex-direction: column;
-    gap: 40px;     padding: 20px;
+    gap: 40px;     
+    padding: 20px;
   }
   
     .articulo1, .articulo2 {
@@ -40,10 +47,12 @@ img {
     flex-direction: row-reverse;   }
   
     .img1, .img2 {
-    width: 40%;     height: auto;     border-radius: 10px;   }
-  
+    width: 40%;     height: auto;     border-radius: 40px;   }
+        
 .articulo1 p, .articulo2 p {
     width: 65%;     margin: 0;     line-height: 2;     font-size: 1.5em;     font-family: 'Verdana', sans-serif;     color: #222;     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); }
+
+/* lo de la sombra en el texto lo he encontrado en este enlace que me ha sido util: https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
 
 .articulo1 ul {
     margin: 0;
@@ -85,10 +94,13 @@ img {
     padding: 0;
 }
 
-.nav-links li {
+.nav-links li {   
     float: left;
+    /* esto lo hago para que se oriente horizontalmente */
 }
 
+
+/* auqi trato los enlaces y el select del idioma */
 .nav-links li a, .navbar select {
     padding: 10px;
     font-size: 16px;     display: block;
@@ -97,6 +109,8 @@ img {
     text-decoration: none;
 }
 
+
+/* aqui trato la pseudoclase hover de los enlaces, simplemente cambiando el color */
 .nav-links li a:hover {
     background-color: rgba(89, 99, 194, 0.2);     color: black;
 }
@@ -140,7 +154,10 @@ html, body {
 
 .primero {
     position: relative; }
+    /* para que se posicione en relacióon a él, no a la página */
 
+
+    /* aquí trato las pseudoclases */
 .primero::before,
 .primero::after {
     content: '';     position: absolute;     bottom: 0;     left: 0;     width: 100%;     height: 1px;     background-color: #ccc; }
@@ -184,24 +201,13 @@ html, body {
     padding: 0 20px;
 }
 
-.featcomp {
+.mampcomp {
     background-color: #fff;
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-.ctaoficina{
-    text-align: center;
-    margin-top: 3rem;
-    display: inline-block;
-            color: #fff;
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-}
 
 .form_select {
     padding: 8px;
@@ -241,6 +247,9 @@ html, body {
 .contact-form label {
     display: block;     margin-bottom: 5px; }
 
+
+    /* hago esta selección para que todos los campos de entrada del formulario tengan los mismos estilos. */
+    /* me llamó la atención, ya que no conocía esta funcionalidad, lo cogí de https://www.w3schools.com/css/css_form.asp */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
@@ -278,15 +287,10 @@ button:hover{
     background-color: rgb(73, 26, 117);
 }
 
-
-
-
 .programas {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .carta {
     flex: 1;
@@ -364,18 +368,16 @@ button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        margin: 0 auto; /* Centra horizontalmente */
-        
-        
+        margin: 0 auto; 
+               
 }
+
 .sectionindice{
     background-color: #d7dfe6;
 }
 
 .h2indice {
-    width: 600px;
-    margin: 0 auto; /* Centra horizontalmente */
+    margin: 0 auto; 
     display: block;
     font-size: 30px;
 }
