@@ -173,7 +173,7 @@ html, body {
     align-items: center;
     padding: 20px;     height: 300px;     width: 80%;     margin: 0 auto; }
 
-.product {
+.product, .product1, .product2 {
     
       margin-top: 7rem;
     text-align: center;
@@ -185,15 +185,13 @@ html, body {
     border-bottom-right-radius: 1rem;
 }
 
-.bodycomp {
-    font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-}
 
+.titcomp {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
 
 .containercomp {
     max-width: 800px;
@@ -356,9 +354,53 @@ button:hover {
     display: block; 
     margin: 0 auto; }
 
+/* Estilo general */
+.equipo {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Título principal */
+.equipo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.miembros {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    flex-wrap: wrap;
+}
+
+.miembro {
+    text-align: center;
+    width: 200px;
+}
+
+.miembro img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%; /* Hace que las imágenes sean circulares, he descubierto que se puede hacer con % tambien */
+    border: 3px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.miembro p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin: 0;
+}
+
 
 .fondoformulario {
     background-image: url('https://arquimart.es/wp-content/uploads/2021/04/arquimart.jpg');
+    border-radius: 40px;
+    /* vuelvo a añadir el borde redondeado, ya que al ser un fondo, no es img, por lo que no adapta la característica aplicada a las imágenes */
     background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -369,7 +411,7 @@ button:hover {
         justify-content: center;
         align-items: center;
         margin: 0 auto; 
-               
+              
 }
 
 .sectionindice{
