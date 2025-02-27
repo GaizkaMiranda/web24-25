@@ -518,9 +518,23 @@ footer {
   
   .contenido {
     max-width: 600px;     margin: auto;   }
+
+   
+    
   
     .disponibilidad {
-    margin: 0 auto;     max-width: 100%;     width: 80%;     text-align: center;     background-image: url('../img/fondodisponibilidad.png');     background-size: cover;     background-repeat: no-repeat;     padding: 20px;     margin-bottom: 50px; }
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        gap: 30px; 
+        flex-wrap: wrap; 
+        padding: 20px;
+    }
+
+    .disponibilidad img {
+        width: 400px; 
+        height: auto;
+    }
 
 .disponibilidad h2 {
     margin-top: 50px;     margin-bottom: 20px;     color: white; }
@@ -530,7 +544,9 @@ footer {
 }
 
 .disponibilidad table {
-    width: 100%;     border-collapse: separate;     border-spacing: 10px; }
+    border-collapse: collapse;
+    width: 1000px;
+     }
 
 .disponibilidad th,
 .disponibilidad td {
