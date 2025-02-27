@@ -1,6 +1,6 @@
 
 body {
-    background-color: white;
+    
     margin: 0;     padding: 0;     font-family: 'Roboto', sans-serif;     display: flex;
     flex-direction: column;
 }
@@ -539,9 +539,6 @@ footer {
 .disponibilidad h2 {
     margin-top: 50px;     margin-bottom: 20px;     color: white; }
 
-.contenidotabla {
-    color: white;
-}
 
 .disponibilidad table {
     border-collapse: collapse;
