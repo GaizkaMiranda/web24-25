@@ -16,7 +16,7 @@ img {
     height: auto;
     max-width: 100%; 
     border-radius: 40px;
-    /* con border-radius les pongo las esquinas redondeadas https://developer.mozilla.org/es/docs/Web/CSS/border-radius*/
+    /* con border-radius les pongo las esquinas redondeadas a todas las imagenes para que todas sigan un mismo estandar https://developer.mozilla.org/es/docs/Web/CSS/border-radius*/
 }
     
 
@@ -519,7 +519,6 @@ footer {
   .contenido {
     max-width: 600px;     margin: auto;   }
   
-
     .disponibilidad {
     margin: 0 auto;     max-width: 100%;     width: 80%;     text-align: center;     background-image: url('../img/fondodisponibilidad.png');     background-size: cover;     background-repeat: no-repeat;     padding: 20px;     margin-bottom: 50px; }
 
