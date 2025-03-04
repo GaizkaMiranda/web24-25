@@ -28,6 +28,7 @@ img {
 
 .form_form {
     margin-top: 20px;     
+    padding: 20px;
  }
 
 .contenedorinicio {
@@ -71,7 +72,7 @@ img {
 
 .privacidad , .depart, .coment, .adjuntar, .telefono{
     color: #000407;
-    display: block;     margin-bottom: 5px;     font-size: 25px;
+    margin-bottom: 5px;     font-size: 25px;
     padding: 20px;    
 }
 
@@ -137,6 +138,17 @@ html, body {
     height: 100%;
     margin: 0;
 }
+/* centro la foto en el medio con auto así, si cambio el tamaño se ajusta solo  */
+#img-servicios{
+    /* me he dado cuenta que he tenido que alterar la "naturaleza" de la imagen con display a block para poder centrarla, 
+    si no, no hace caso al margin-left: auto;   margin-right: auto;*/
+    display: block;
+    width:500px ;
+    height: 325px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 .central,  iframe{
     margin: 0 auto;
@@ -184,6 +196,10 @@ html, body {
     background-color: #037bc0;
     color: white;
     border-bottom-right-radius: 1rem;
+}
+.product-list img{
+    max-width: 500px;
+    max-height: 500px;
 }
 
 
@@ -389,6 +405,7 @@ button:hover {
 
 
 .fondoformulario {
+    display: flex;
     background-image: url('https://arquimart.es/wp-content/uploads/2021/04/arquimart.jpg');
     border-radius: 40px;
     /* vuelvo a añadir el borde redondeado, ya que al ser un fondo, no es img, por lo que no adapta la característica aplicada a las imágenes */
@@ -397,7 +414,6 @@ button:hover {
         background-position: center;
         display: flex;
         width: 50%;
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -556,21 +572,45 @@ footer {
 .disponibilidad th {
     background-color: #f2f2f2; }
 
-
-
 .mapa {
     display: block;
     margin: 0 auto;
     width: 80%;     height: 450px; }
 
 .form-container {
-    margin-right: 20px;     margin-bottom: 20px; }
+    background-color: rgba(255, 255, 255);
+    opacity: 0.9; /*cuanto más se lo baje más transparente se va a ver   */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    }
+    /* antes de usar la propiedad de opacity no estaba nada estético, quedaba muy mal. Además, el texto casi ni se veía por el fondo
+    por eso investigando soluciones en internet, he descubierto que esto me da la opción de darle transparencia a lo que yo quiera 
+     */
+     /* Lo saco de aquí: https://developer.mozilla.org/es/docs/Web/CSS/opacity */
 
+     form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input, select, textarea, button {
+        margin-bottom: 10px;
+        padding: 8px;
+        font-size: 16px;
+    }
+    .radio-group {
+        display: flex;
+        gap: 10px;
+    }
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    
+}
 
-input {
-    display: block;     margin-bottom: 10px;   }
-
-  .footerMap {
+.footerMap {
     display: flex;
     justify-content: center;     align-items: center;     margin-top: 1.25rem; }
 
