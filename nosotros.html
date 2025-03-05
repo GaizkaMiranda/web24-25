@@ -55,18 +55,31 @@
 
 
 <body>
-    <!-- <aside class="clientes-sidebar">
-        <h2>Nuestros Clientes</h2>
-        <ul>
-            
-        </ul>
-    </aside> -->
+
     <aside>
-        <ul class="lista-aside">
-            <li><img src="images/cliente1.png" alt="Cliente 1"> Mercedes-Benz</li>
-            <li><img src="images/cliente2.png" alt="Cliente 2"> Universidad de Deusto</li>
-            <li><img src="images/cliente3.png" alt="Cliente 3"> Real Sociedad</li>
-            <li><img src="images/cliente4.png" alt="Cliente 4"> Gobierno Vasco</li>
+        <!-- he descubierto que de puede quitar el punto https://www.w3schools.com/cssref/pr_list-style-type.php -->
+        <ul class="lista-aside"style="list-style-type: none;"> 
+            <li>
+                <a href="https://www.mercedes-benz.es/" target="_blank">
+                  <img class="imgmercedes" src="/images/mercedes.jpg" alt="Cliente 1"> Mercedes-Benz
+                </a>
+              </li>
+            <li>
+                <a href="https://www.deusto.es/" target="_blank">
+                <img class="imgdeusto" src="/images/deusto.png" alt="Cliente 2"> Universidad de Deusto
+                </a>
+            </li>
+            <li>
+                <a href="https://www.realsociedad.eus/" target="_blank">
+                <img class="imganoeta"src="/images/realsociedad.png" alt="Cliente 3"> Real Sociedad
+                </a>
+            </li>
+            <li>
+                <a href="https://www.euskadi.eus/gobierno-vasco/inicio/" target="_blank">
+                
+                <img class="imggobiernovasco"src="/images/logo-gobierno-vasco.jpg" alt="Cliente 4"> Gobierno Vasco
+                </a>
+            </li>
         </ul>
     </aside>
     <div class="disponibilidad">
@@ -145,7 +158,7 @@
         </div>
     </section>
     <h2>Comprometidos con la excelencia desde 1957</h2>
-    <ul class="contenedor-años">
+    <ul class="contenedor-años" style="list-style-type: none;">
         <li class="año2010"><strong>2010.</strong> Tras once años desarrollando proyectos como ingeniería bajo la marca de Lorpen, nace Sistemas Arquimart, una empresa con vocación de innovación y diseño que pretende revolucionar el concepto y la fabricación en sistemas
             de compartimentación y distribución para oficinas. Ese mismo año, Sistemas Arquimart inicia la comercialización de uno de sus grandes productos: la mampara Vitrum 35, que de forma inmediata se convierte en un producto estrella y clave para el desarrollo de la empresa. Hoy en día, Vitrum 35
             está presente en algunas de las instalaciones de grandes compañías como BBVA, Bankia, Mapfre, Nestlé, etcétera. <img src="images/foto2010.jpg" alt=""></li>

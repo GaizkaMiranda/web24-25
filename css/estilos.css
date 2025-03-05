@@ -7,6 +7,8 @@ body {
 
 
 header {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 20px;
 }
@@ -42,6 +44,7 @@ img {
     .articulo1, .articulo2 {
     display: flex;
     align-items: center;     gap: 20px; 
+    
    
   }
   
@@ -98,12 +101,17 @@ img {
     margin: 0;
     padding: 0;
 }
-
+nav ul li {
+    flex-grow: 1; 
+    text-align: center; 
+  }
 .nav-links li {   
     float: left;
     /* esto lo hago para que se oriente horizontalmente */
 }
-
+.idioma select:hover {
+    border-color: #007bff; 
+}
 
 /* auqi trato los enlaces y el select del idioma */
 .nav-links li a, .navbar select {
@@ -567,6 +575,7 @@ footer {
         padding: 20px;
     }
 
+
     .disponibilidad img {
         width: 400px; 
         height: auto;
@@ -587,7 +596,10 @@ footer {
 
 .disponibilidad th {
     background-color: #f2f2f2; }
-
+.lista-aside img{
+    max-width: 100px;
+    max-height: 100px;
+}
 .mapa {
     display: block;
     margin: 0 auto;
