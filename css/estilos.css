@@ -501,7 +501,10 @@ footer {
     color: white;
     text-decoration: none;
 }
-
+.comprometidos{
+    text-align: center;
+    font-style:oblique;
+}
 .contenedor-años {
         width: 100%;
         display: flex;
@@ -525,6 +528,24 @@ footer {
     text-align: left;
 }
 
+.año2010 img, .año2014 img , .año2018 img{
+    float: right;
+    margin-left: 20px;
+}
+
+.año2010 p , .año2014 p , .año2018 p{
+    width: 50%;
+    float: left;
+}
+.año2012 img, .año2016 img {
+    float: left;
+    margin-left: 20px;
+}
+
+.año2012 p , .año2016 p {
+    width: 50%;
+    float: right;
+}
 
 
 .footerColumn .satisfaccion a {
@@ -568,11 +589,13 @@ footer {
   
     .disponibilidad {
         display: flex;
+        flex-direction: row;
         align-items: center; 
         justify-content: center; 
         gap: 30px; 
         flex-wrap: wrap; 
         padding: 20px;
+        align-content: center;
     }
 
 
@@ -596,6 +619,34 @@ footer {
 
 .disponibilidad th {
     background-color: #f2f2f2; }
+
+.lista-aside{
+    width: 26rem;
+  
+}    
+.item{
+    background-color: #DDD;
+    padding: 1em;
+    margin-bottom: .2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial;
+  }
+
+.enlace-aside {
+    background-color: #fff;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+.enlace-aside:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
 .lista-aside img{
     max-width: 100px;
     max-height: 100px;
