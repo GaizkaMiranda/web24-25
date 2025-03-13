@@ -47,18 +47,42 @@ img {
     .articulo1, .articulo2 {
     display: flex;
     align-items: center;     gap: 20px; 
-    
-   
+
   }
   
-    .articulo1 {
-    flex-direction: row;   }
-  
-    .articulo2 {
-    flex-direction: row-reverse;   }
-  
+  .articulo1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textoindice{
+    text-align:start;
+}
+
+.imagenes {
+    display: flex;
+    gap: 20px;
+}
+
+.imagenes h1{
+    text-align: center;
+}
+
+.lista-indice {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    font-size: 1.3em;
+    color: #d1401b;
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+}
+
     .img1, .img2 , .img3, .img4{
-    width: 400px;     height: 400px;     border-radius: 40px;   }
+    width: 350px;     height: 350px;     border-radius: 40px;   }
         
 .articulo1 p, .articulo2 p {
     width: 65%;     margin: 0;     line-height: 2;     font-size: 1.5em;     font-family: 'Verdana', sans-serif;     color: #222;     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); }
@@ -73,7 +97,10 @@ img {
 .articulo1 ul li {
     margin-bottom: 12px;     line-height: 1.8;
 }
-
+#idimg4{
+    max-width: 350px;
+    /* le he añadido un id a la imagen 4 para tener mas especifidad, sin esto, no se porque se me expande la imagen */
+}
 .articulo2 p strong {
     color: #0056b3;     font-weight: bold;
     text-decoration: underline; }
@@ -482,9 +509,11 @@ button:hover {
 
 .sectionindice{
     background-color: #d7dfe6;
+    margin: 50px;
 }
 
 .h2indice {
+    text-align: center;
     margin: 0 auto; 
     display: block;
     font-size: 30px;
@@ -620,7 +649,10 @@ footer {
     max-width: 600px;     margin: auto;   }
 
    
-    
+    .imagentabla{
+        max-width: 300px;
+        
+    }
   
     .disponibilidad {
         display: flex;
