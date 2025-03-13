@@ -570,51 +570,54 @@ footer {
     font-style:oblique;
 }
 .contenedor-años {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
-.contenedor-años div {
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
+
+.contenedor-años li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    min-height: 300px;
 }
-.contenedor-años img{
-    width: 200px;
-    height: 200px;
-}
+
 .año2010, .año2014, .año2018 {
     background-color: #f0f0f0;
-    text-align: right;
+    flex-direction: row-reverse;
 }
+
 .año2012, .año2016 {
     background-color: #837d59;
+    flex-direction: row;
+}
+
+.contenedor-años li p {
+    padding: 0 40px;
+    margin: 0;
+}
+
+.contenedor-años li img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 40px;
+}
+
+#foto2010, #foto2012, #foto2014, #foto2016, #foto2018 {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.año2010 p, .año2014 p, .año2018 p {
+    text-align: right;
+}
+
+.año2012 p, .año2016 p {
     text-align: left;
 }
 
-.año2010 img, .año2014 img , .año2018 img{
-    float: right;
-    margin-left: 20px;
-}
-
-.año2010 p , .año2014 p , .año2018 p{
-    width: 50%;
-    float: left;
-}
-.año2012 img, .año2016 img {
-    float: left;
-    margin-left: 20px;
-}
-
-.año2012 p , .año2016 p {
-    width: 50%;
-    float: right;
-}
-
-
 .footerColumn .satisfaccion a {
     display: inline-block;
-    text-decoration: none;
         text-align: center;
     width: 45px;
     height: 45px;
