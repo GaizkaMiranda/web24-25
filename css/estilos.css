@@ -207,7 +207,8 @@ html, body {
 .central p {
     font-weight: 500;
     
-}
+} 
+
 
 
 .central {
@@ -240,7 +241,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;     height: 300px;     width: 80%;     margin: 0 auto; }
+         height: 300px;     width: 80%;     margin: 0 auto; }
 
 .product, .product1, .product2 {
     
@@ -249,13 +250,21 @@ html, body {
 }
 
 .product:hover{
-    background-color: #037bc0;
-    color: white;
     border-bottom-right-radius: 1rem;
 }
 .product-list img{
     max-width: 500px;
     max-height: 500px;
+    
+}
+.product-list{
+    text-align: center;
+}
+
+.h2-productos{
+    border:dotted;
+    max-width: 230px;
+    text-align: center;
 }
 
 
@@ -458,10 +467,11 @@ button:hover {
 }
 
 /* less meto una pseudoclase con ciertos estilos para que sea atractivo y sobre todo que el usuario se de cuenta que se pueden pulsar y te lleva a un enlace*/
-.imagenceo:hover, .imagenmanager:hover { 
+.imagenceo:hover, .imagenmanager:hover , .imagencomp:hover img, .imgpr1:hover{ 
     border: 2px solid #ff6f61; 
     transform: scale(1.05); /*investigando en internet esto me parece muy buena idea para que el usuario se de cuenta que se puede pulsar https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale */
 }
+
 .miembros {
     display: flex;
     justify-content: center;
@@ -510,6 +520,7 @@ button:hover {
 .sectionindice{
     background-color: #d7dfe6;
     margin: 50px;
+    
 }
 
 .h2indice {
