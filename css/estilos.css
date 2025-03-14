@@ -575,6 +575,7 @@ footer {
 .footerColumn a {
     color: white;
     text-decoration: none;
+    /* Saco de este enlace la idea, ya que antes de esto, toda la imagen quedaba como enlace y estaba feo https://www.hostgator.mx/blog/quitar-subrayado-enlace/ */
 }
 .comprometidos{
     text-align: center;
