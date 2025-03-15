@@ -1,781 +1,919 @@
+/* ESTILOS GENERALES PARA TODAS LAS PÁGINAS */
+/* Para tabular todo he utilizado esta web y así no tener que hacerlo manual: https://pinetools.com/es/formateador-css */
+.nav-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar select {
+	background-color: white;
+	color: black;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+/* aqui trato la pseudoclase hover de los enlaces, simplemente cambiando el color */
+
+.nav-links li a:hover {
+	background-color: rgba(89, 99, 194, 0.2);
+	color: black;
+}
+
+nav ul li {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.nav-links li {
+	float: left;
+	/* esto lo hago para que se oriente horizontalmente */
+}
+
+.idioma select:hover {
+	border-color: #007bff;
+}
+
+
+/* auqi trato los enlaces y el select del idioma */
+
+.nav-links li a,
+.navbar select {
+	padding: 10px;
+	font-size: 16px;
+	display: block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
 
 body {
-    
-    margin: 0;     padding: 0;     font-family: 'Roboto', sans-serif;     display: flex;
-    flex-direction: column;
-    }
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+}
 
-    .contenedor-principal {
-        max-width: 1400px; 
-        margin: 0 auto;    
-      }
+.contenedor-principal {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
 header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    max-width: 100%; 
-    border-radius: 40px;
-    /* con border-radius les pongo las esquinas redondeadas a todas las imagenes para que todas sigan un mismo estandar https://developer.mozilla.org/es/docs/Web/CSS/border-radius*/
+	max-width: 100%;
+	height: auto;
+	max-width: 100%;
+	border-radius: 40px;
+	/* con border-radius les pongo las esquinas redondeadas a todas las imagenes para que todas sigan un mismo estandar https://developer.mozilla.org/es/docs/Web/CSS/border-radius*/
 }
-    
 
 .navbar {
-        background-color: white;
-        text-align: center;
-    }
-
-
-.form_form {
-    margin-top: 20px;     
-    padding: 20px;
- }
-
-.contenedorinicio {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;     
-    padding: 20px;
-  }
-  
-    .articulo1, .articulo2 {
-    display: flex;
-    align-items: center;     gap: 20px; 
-
-  }
-  
-  .articulo1 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+	background-color: white;
+	text-align: center;
 }
 
-.textoindice{
-    text-align:start;
+.mapa {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: 450px;
+}
+
+.footerMap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.25rem;
+}
+
+.footerMap iframe {
+	width: 80%;
+	max-width: 37.5rem;
+	height: 25rem;
+	border: none;
+}
+
+footer {
+	background-color: #1a0e14;
+	text-align: center;
+	color: white;
+	padding: 2rem 0;
+	font-size: 1rem;
+}
+
+.footerContainer {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footerColumn {
+	flex-basis: 30%;
+	color: white;
+}
+
+.footerColumn h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.footerColumn ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.footerColumn li {
+	margin-bottom: 15px;
+}
+
+.footerColumn a {
+	color: white;
+	text-decoration: none;
+	/* Saco de este enlace la idea, ya que antes de esto, toda la imagen quedaba como enlace y estaba feo https://www.hostgator.mx/blog/quitar-subrayado-enlace/ */
+}
+
+
+/* ESTILOS index.html */
+
+.central19 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.contenedorinicio {
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 20px;
+}
+
+.fondoformulario {
+	display: flex;
+	background-image: url('https://arquimart.es/wp-content/uploads/2021/04/arquimart.jpg');
+	border-radius: 40px;
+	/* vuelvo a añadir el borde redondeado, ya que al ser un fondo, no es img, por lo que no adapta la característica aplicada a las imágenes */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.form_form {
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.sectionindice {
+	background-color: #d7dfe6;
+	margin: 50px;
+}
+
+.h2indice {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	font-size: 30px;
+}
+
+.form-container {
+	background-color: rgba(255, 255, 255);
+	opacity: 0.9;
+	/*cuanto más se lo baje más transparente se va a ver   */
+	padding: 20px;
+	border-radius: 10px;
+	width: 400px;
+}
+
+
+/* antes de usar la propiedad de opacity no estaba nada estético, quedaba muy mal. Además, el texto casi ni se veía por el fondo
+    por eso investigando soluciones en internet, he descubierto que esto me da la opción de darle transparencia a lo que yo quiera 
+     */
+
+
+/* Lo saco de aquí: https://developer.mozilla.org/es/docs/Web/CSS/opacity */
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input,
+select,
+textarea,
+button {
+	margin-bottom: 10px;
+	padding: 8px;
+	font-size: 16px;
+}
+
+.radio-group {
+	display: flex;
+	gap: 10px;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+}
+
+.articulo1,
+.articulo2 {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.articulo1 {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .imagenes {
-    display: flex;
-    gap: 20px;
+	display: flex;
+	gap: 20px;
 }
 
-.imagenes h1{
-    text-align: center;
+.imagenes h1 {
+	text-align: center;
 }
 
 .lista-indice {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    font-size: 1.3em;
-    color: #d1401b;
-    font-family: 'Verdana', sans-serif;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+	font-size: 1.3em;
+	color: #d1401b;
+	font-family: 'Verdana', sans-serif;
+	text-align: center;
 }
 
-    .img1, .img2 , .img3, .img4{
-    width: 350px;     height: 350px;     border-radius: 40px;   }
-        
-.articulo1 p, .articulo2 p {
-    width: 65%;     margin: 0;     line-height: 2;     font-size: 1.5em;     font-family: 'Verdana', sans-serif;     color: #222;     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); }
+.img1,
+.img2,
+.img3,
+.img4 {
+	width: 350px;
+	height: 350px;
+	border-radius: 40px;
+}
+
+.articulo1 p,
+.articulo2 p {
+	width: 65%;
+	margin: 0;
+	line-height: 2;
+	font-size: 1.5em;
+	font-family: 'Verdana', sans-serif;
+	color: #222;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
 
 /* lo de la sombra en el texto lo he encontrado en este enlace que me ha sido util: https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
 
 .articulo1 ul {
-    margin: 0;
-    padding-left: 25px;     font-size: 1.3em;     color: #d1401b;     font-family: 'Verdana', sans-serif;
+	margin: 0;
+	padding-left: 25px;
+	font-size: 1.3em;
+	color: #d1401b;
+	font-family: 'Verdana', sans-serif;
 }
 
 .articulo1 ul li {
-    margin-bottom: 12px;     line-height: 1.8;
+	margin-bottom: 12px;
+	line-height: 1.8;
 }
-#idimg4{
-    max-width: 350px;
-    /* le he añadido un id a la imagen 4 para tener mas especifidad, sin esto, no se porque se me expande la imagen */
+
+#idimg4 {
+	max-width: 350px;
+	/* le he añadido un id a la imagen 4 para tener mas especifidad, sin esto, no se porque se me expande la imagen */
 }
+
 .articulo2 p strong {
-    color: #0056b3;     font-weight: bold;
-    text-decoration: underline; }
+	color: #0056b3;
+	font-weight: bold;
+	text-decoration: underline;
+}
 
-
-.privacidad , .depart, .coment, .adjuntar, .telefono{
-    color: #000407;
-    margin-bottom: 5px;     font-size: 25px;
-    padding: 20px;    
+.privacidad,
+.depart,
+.coment,
+.adjuntar,
+.telefono {
+	color: #000407;
+	margin-bottom: 5px;
+	font-size: 25px;
+	padding: 20px;
 }
 
 .form_checkbox_container {
-    display: flex;     align-items: center;     margin-bottom: 10px; }
-
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
 
 .form_input,
 .form_select,
 .form_textarea {
-    width: 100%;     padding: 8px;     margin-bottom: 10px;     box-sizing: border-box; }
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
 
 .form_submit:hover {
-    background-color: #0cd5d5;
+	background-color: #0cd5d5;
 }
 
 
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-nav ul li {
-    flex-grow: 1; 
-    text-align: center; 
-  }
-.nav-links li {   
-    float: left;
-    /* esto lo hago para que se oriente horizontalmente */
-}
-.idioma select:hover {
-    border-color: #007bff; 
-}
+/* ESTILOS contacto.html */
 
-/* auqi trato los enlaces y el select del idioma */
-.nav-links li a, .navbar select {
-    padding: 10px;
-    font-size: 16px;     display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-/* aqui trato la pseudoclase hover de los enlaces, simplemente cambiando el color */
-.nav-links li a:hover {
-    background-color: rgba(89, 99, 194, 0.2);     color: black;
-}
-
-@media screen and (max-width: 600px) {
-    .nav-links li {
-        float: none;
-    }
-}
-
-.navbar select {
-    background-color: white;     color: black;     border: 1px solid #ccc;     border-radius: 5px;     margin-left: 20px;     cursor: pointer; }
-
-@media screen and (max-width: 600px) {
-    .navbar select {
-        width: 100%;     }
-    .nav-links li, .idioma {
-        float: none;         text-align: center;     }
-}
-
-@media (600px <= width){
-    .articulo1 img, .articulo2 img{
-        display: block;
-        width: 100%; 
-        margin: 10px 0;
-
-    }
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-/* centro la foto en el medio con auto así, si cambio el tamaño se ajusta solo  */
-#img-servicios{
-    /* me he dado cuenta que he tenido que alterar la "naturaleza" de la imagen con display a block para poder centrarla, 
-    si no, no hace caso al margin-left: auto;   margin-right: auto;*/
-    display: block;
-    width:500px ;
-    height: 325px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-.central,  iframe{
-    margin: 0 auto;
-
+.central,
+iframe {
+	margin: 0 auto;
 }
 
 .central p {
-    font-weight: 500;
-    
-} 
-
-
+	font-weight: 500;
+}
 
 .central {
-    max-width: 800px;    
-     margin: 0 auto;     
-    padding: 20px;    
-     background-color: #f9f8fc;    
-     border-radius: 10px;     
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);     
-    margin-top: 20px;     
-    margin-bottom: 20px; }
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f9f8fc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.lista-aside {
+	width: 26rem;
+}
+
+.item {
+	background-color: #DDD;
+	padding: 1em;
+	margin-bottom: .2em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: Arial;
+}
+
+.enlace-aside {
+	background-color: #fff;
+	padding: 4px 6px;
+	cursor: pointer;
+}
+
+.enlace-aside:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.lista-aside img {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+	.nav-links li {
+		float: none;
+	}
+}
+
+.navbar select {
+	background-color: white;
+	color: black;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+	.navbar select {
+		width: 100%;
+	}
+	.nav-links li,
+	.idioma {
+		float: none;
+		text-align: center;
+	}
+}
+
+@media (600px <=width) {
+	.articulo1 img,
+	.articulo2 img {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+
+
+/* centro la foto en el medio con auto así, si cambio el tamaño se ajusta solo  */
+
+#img-servicios {
+	/* me he dado cuenta que he tenido que alterar la "naturaleza" de la imagen con display a block para poder centrarla, 
+    si no, no hace caso al margin-left: auto;   margin-right: auto;*/
+	display: block;
+	width: 500px;
+	height: 325px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 
 .primero {
-    position: relative; }
-    /* para que se posicione en relacióon a él, no a la página */
+	position: relative;
+}
 
 
-    /* aquí trato las pseudoclases */
+/* para que se posicione en relacióon a él, no a la página */
+
+
+/* aquí trato las pseudoclases */
+
 .primero::before,
 .primero::after {
-    content: '';     position: absolute;     bottom: 0;     left: 0;     width: 100%;     height: 1px;     background-color: #ccc; }
-
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+}
 
 .primero::after {
-    bottom: 0; }
-
-
-.central19 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-         height: 300px;     width: 80%;     margin: 0 auto; }
-
-.product, .product1, .product2 {
-    
-      margin-top: 7rem;
-    text-align: center;
+	bottom: 0;
 }
 
-.product:hover{
-    border-bottom-right-radius: 1rem;
-}
-.product-list img{
-    max-width: 500px;
-    max-height: 500px;
-    
-}
-.product-list{
-    text-align: center;
+.product,
+.product1,
+.product2 {
+	margin-top: 7rem;
+	text-align: center;
 }
 
-.h2-productos{
-    border:dotted;
-    max-width: 230px;
-    text-align: center;
+.product:hover {
+	border-bottom-right-radius: 1rem;
 }
 
+.product-list img {
+	max-width: 500px;
+	max-height: 500px;
+}
+
+.product-list {
+	text-align: center;
+}
+
+.h2-productos {
+	border: dotted;
+	max-width: 230px;
+	text-align: center;
+}
 
 .titcomp {
-    font-size: 24px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #222;
+	margin-bottom: 10px;
 }
 
 .containercomp {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .mampcomp {
-    background-color: #fff;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.contenedor-contacto {
-    display: flex;
-    align-items: flex-start; 
-    gap: 20px;               
-    margin: 0 auto;        
-    max-width: 1200px;     
-    align-items: stretch; 
-
-}
 .form_select {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    width: 100%;
-    
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	width: 100%;
 }
 
 .form_textarea {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    width: 100%;
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	width: 100%;
 }
 
 .form_submit {
-    width: auto;     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+	width: auto;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
 }
+
 
 /* Contenedor principal con Flexbox para el formulario */
+
 .form-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
 }
 
-.contact-form  {
-    margin-top: 10px;
-    justify-content: center;
+.contact-form {
+	margin-top: 10px;
+	justify-content: center;
 }
 
 .form-fields {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
+	flex: 2;
+	display: flex;
+	flex-direction: column;
 }
+
 .contact-form {
-    background-color:#787476;     padding: 20px;     border-radius: 10px; }
+	background-color: #787476;
+	padding: 20px;
+	border-radius: 10px;
+}
 
 .contact-form h3 {
-    margin-bottom: 10px; }
+	margin-bottom: 10px;
+}
 
 .contact-form form {
-    margin-top: 10px; }
+	margin-top: 10px;
+}
 
 .contact-form label {
-    display: block;     margin-bottom: 5px; }
+	display: block;
+	margin-bottom: 5px;
+}
 
 
-    /* hago esta selección para que todos los campos de entrada del formulario tengan los mismos estilos. */
-    /* me llamó la atención, ya que no conocía esta funcionalidad, lo cogí de https://www.w3schools.com/css/css_form.asp */
+/* hago esta selección para que todos los campos de entrada del formulario tengan los mismos estilos. */
+
+
+/* me llamó la atención, ya que no conocía esta funcionalidad, lo cogí de https://www.w3schools.com/css/css_form.asp */
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
 .contact-form textarea {
-    width: 100%;     padding: 8px;     margin-bottom: 10px;     border: 1px solid #11010a;     border-radius: 5px; }
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #11010a;
+	border-radius: 5px;
+}
 
 .contact-form input[type="submit"] {
-    background-color: #007bff;     color: #fff;     padding: 10px 20px;     border: none;     border-radius: 5px;     cursor: pointer; }
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
 
 .contact-form input[type="submit"]:hover {
-    background-color: #0056b3; }
-
-
-button{
-    font-size: 1.25em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: rgb(153, 33, 79);
+	background-color: #0056b3;
 }
-button:hover{
-    background-color: rgb(73, 26, 117);
-}
-
-.programas {
-    display: flex;
-    justify-content: space-between;
-}
-
-.carta {
-    flex: 1;
-    margin: 0 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f4e1e1; }
-
-.carta h3 {
-    margin-top: 0;
-    color: #333; }
-
-.carta p {
-    margin-bottom: 10px;
-    color: #666; }
 
 button {
-    background-color: #e93790;     color: #fff;     border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 10px 30px;
+	border-radius: 5px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	color: white;
+	background-color: rgb(153, 33, 79);
 }
 
 button:hover {
-    background-color: #d450a4; 
+	background-color: rgb(73, 26, 117);
 }
 
+.programas {
+	display: flex;
+	justify-content: space-between;
+}
+
+.carta {
+	flex: 1;
+	margin: 0 10px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f4e1e1;
+}
+
+.carta h3 {
+	margin-top: 0;
+	color: #333;
+}
+
+.carta p {
+	margin-bottom: 10px;
+	color: #666;
+}
+
+button {
+	background-color: #e93790;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #d450a4;
+}
 
 .nuestros-servicios {
-    color: #0e0007;     text-align: center;     margin: auto; }
-
+	color: #0e0007;
+	text-align: center;
+	margin: auto;
+}
 
 .fondo {
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    width: 400px; }
-
-
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	width: 400px;
+}
 
 .projects-container {
-    display: flex;
-    justify-content: center; 
-    gap: 60px; 
-    margin: auto; }
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+	margin: auto;
+}
 
 .proyecto-img {
-    width: 100%;     height: 150px;     object-fit: cover;     border-radius: 5px; 
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 5px;
 }
 
 .img-fabrica {
-    display: block;
-    margin: 20px auto;     max-width: 80%;     height: auto;     border-radius: 5px; }
-
+	display: block;
+	margin: 20px auto;
+	max-width: 80%;
+	height: auto;
+	border-radius: 5px;
+}
 
 .cl1,
 .cl2 {
-    max-width: 400px;     padding: 20px;     background-color: #837d59;     border-radius: 8px;     box-shadow: 0 0 10px rgba(81, 23, 148, 0.1);     text-align: center; }
-
+	max-width: 400px;
+	padding: 20px;
+	background-color: #837d59;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(81, 23, 148, 0.1);
+	text-align: center;
+}
 
 .cl2 img {
-    display: block; 
-    margin: 0 auto; }
+	display: block;
+	margin: 0 auto;
+}
+
 
 /* Estilo general */
+
 .equipo {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
+	text-align: center;
+	padding: 20px;
+	background-color: #f8f8f8;
 }
+
 
 /* Título principal */
+
 .equipo h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 20px;
 }
 
+
 /* less meto una pseudoclase con ciertos estilos para que sea atractivo y sobre todo que el usuario se de cuenta que se pueden pulsar y te lleva a un enlace*/
-.imagenceo:hover, .imagenmanager:hover , .imagencomp:hover img, .imgpr1:hover{ 
-    border: 2px solid #ff6f61; 
-    transform: scale(1.05); /*investigando en internet esto me parece muy buena idea para que el usuario se de cuenta que se puede pulsar https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale */
+
+.imagenceo:hover,
+.imagenmanager:hover,
+.imagencomp:hover img,
+.imgpr1:hover {
+	border: 2px solid #ff6f61;
+	transform: scale(1.05);
+	/*investigando en internet esto me parece muy buena idea para que el usuario se de cuenta que se puede pulsar https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale */
 }
 
 .miembros {
-    display: flex;
-    justify-content: center;
-    gap: 40px; 
-    flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
 }
 
 .miembro {
-    text-align: center;
-    width: 200px;
+	text-align: center;
+	width: 200px;
 }
 
 .miembro img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 50%; /* Hace que las imágenes sean circulares, he descubierto que se puede hacer con % tambien */
-    border: 3px solid #ccc;
-    margin-bottom: 10px;
+	width: 100%;
+	max-width: 300px;
+	border-radius: 50%;
+	/* Hace que las imágenes sean circulares, he descubierto que se puede hacer con % tambien */
+	border: 3px solid #ccc;
+	margin-bottom: 10px;
 }
 
 .miembro p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #444;
-    margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #444;
+	margin: 0;
 }
 
-
-.fondoformulario {
-    display: flex;
-    background-image: url('https://arquimart.es/wp-content/uploads/2021/04/arquimart.jpg');
-    border-radius: 40px;
-    /* vuelvo a añadir el borde redondeado, ya que al ser un fondo, no es img, por lo que no adapta la característica aplicada a las imágenes */
-    background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto; 
-              
+.comprometidos {
+	text-align: center;
+	font-style: oblique;
 }
 
-.sectionindice{
-    background-color: #d7dfe6;
-    margin: 50px;
-    
-}
-
-.h2indice {
-    text-align: center;
-    margin: 0 auto; 
-    display: block;
-    font-size: 30px;
-}
-
-
-
-footer {
-    background-color: #1a0e14; 
-    text-align: center;
-    color: white; 
-    padding: 2rem 0;
-    font-size: 1rem;
-}
-
-
-.footerContainer {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-.footerColumn {
-    flex-basis: 30%;
-    color: white;
-    
-}
-
-.footerColumn h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.footerColumn ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-.footerColumn li {
-    margin-bottom: 15px;
-}
-
-.footerColumn a {
-    color: white;
-    text-decoration: none;
-    /* Saco de este enlace la idea, ya que antes de esto, toda la imagen quedaba como enlace y estaba feo https://www.hostgator.mx/blog/quitar-subrayado-enlace/ */
-}
-.comprometidos{
-    text-align: center;
-    font-style:oblique;
-}
 .contenedor-años {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .contenedor-años li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    min-height: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px;
+	min-height: 300px;
 }
 
-.año2010, .año2014, .año2018 {
-    background-color: #f0f0f0;
-    flex-direction: row-reverse;
+.año2010,
+.año2014,
+.año2018 {
+	background-color: #f0f0f0;
+	flex-direction: row-reverse;
 }
 
-.año2012, .año2016 {
-    background-color: #837d59;
-    flex-direction: row;
+.año2012,
+.año2016 {
+	background-color: #837d59;
+	flex-direction: row;
 }
 
 .contenedor-años li p {
-    padding: 0 40px;
-    margin: 0;
+	padding: 0 40px;
+	margin: 0;
 }
 
 .contenedor-años li img {
-    max-width: 400px;
-    height: auto;
-    margin: 0 40px;
+	max-width: 400px;
+	height: auto;
+	margin: 0 40px;
 }
 
-#foto2010, #foto2012, #foto2014, #foto2016, #foto2018 {
-    max-width: 350px;
-    max-height: 350px;
+#foto2010,
+#foto2012,
+#foto2014,
+#foto2016,
+#foto2018 {
+	max-width: 350px;
+	max-height: 350px;
 }
 
-.año2010 p, .año2014 p, .año2018 p {
-    text-align: right;
+.año2010 p,
+.año2014 p,
+.año2018 p {
+	text-align: right;
 }
 
-.año2012 p, .año2016 p {
-    text-align: left;
+.año2012 p,
+.año2016 p {
+	text-align: left;
 }
 
 .footerColumn .satisfaccion a {
-    display: inline-block;
-        text-align: center;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #ffffff;
-    margin-right: 10px;
-    background-color: #0a141d;
-    text-align: center;
-    transition: all 300ms ease;
-    
-
+	display: inline-block;
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #ffffff;
+	margin-right: 10px;
+	background-color: #0a141d;
+	text-align: center;
+	transition: all 300ms ease;
 }
-
 
 .copyright {
-    background-color: #282727;
-    padding: 15px 10px;
-        text-align: center;
-    color: #fff;
+	background-color: #282727;
+	padding: 15px 10px;
+	text-align: center;
+	color: #fff;
 }
 
-
-
 .contenedor {
-    width: 100%;
-    text-align: center;
-    background-color: white;
-    
-  }
-  
-  .contenido {
-    max-width: 600px;     margin: auto;   }
+	width: 100%;
+	text-align: center;
+	background-color: white;
+}
 
-   
-    .imagentabla{
-        max-width: 300px;
-        
-    }
-  
-    .disponibilidad {
-        display: flex;
-        flex-direction: row;
-        align-items: center; 
-        justify-content: center; 
-        gap: 30px; 
-        flex-wrap: wrap; 
-        padding: 20px;
-        align-content: center;
-    }
+.contenido {
+	max-width: 600px;
+	margin: auto;
+}
 
+.imagentabla {
+	max-width: 300px;
+}
 
-    .disponibilidad img {
-        width: 400px; 
-        height: auto;
-    }
+.disponibilidad {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	padding: 20px;
+	align-content: center;
+}
+
+.disponibilidad img {
+	width: 400px;
+	height: auto;
+}
 
 .disponibilidad h2 {
-    margin-top: 50px;     margin-bottom: 20px;     color: white; }
-
+	margin-top: 50px;
+	margin-bottom: 20px;
+	color: white;
+}
 
 .disponibilidad table {
-    border-collapse: collapse;
-    width: 1000px;
-     }
+	border-collapse: collapse;
+	width: 1000px;
+}
 
 .disponibilidad th,
 .disponibilidad td {
-    padding: 10px;     text-align: center;     border: 1px solid #ddd; }
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
 
 .disponibilidad th {
-    background-color: #f2f2f2; }
-
-.lista-aside{
-    width: 26rem;
-  
-}    
-.item{
-    background-color: #DDD;
-    padding: 1em;
-    margin-bottom: .2em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Arial;
-  }
-
-.enlace-aside {
-    background-color: #fff;
-    padding: 4px 6px;
-    cursor: pointer;
+	background-color: #f2f2f2;
 }
-
-.enlace-aside:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-
-
-.lista-aside img{
-    max-width: 100px;
-    max-height: 100px;
-}
-.mapa {
-    display: block;
-    margin: 0 auto;
-    width: 80%;     height: 450px; }
-
-.form-container {
-    background-color: rgba(255, 255, 255);
-    opacity: 0.9; /*cuanto más se lo baje más transparente se va a ver   */
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    }
-    /* antes de usar la propiedad de opacity no estaba nada estético, quedaba muy mal. Además, el texto casi ni se veía por el fondo
-    por eso investigando soluciones en internet, he descubierto que esto me da la opción de darle transparencia a lo que yo quiera 
-     */
-     /* Lo saco de aquí: https://developer.mozilla.org/es/docs/Web/CSS/opacity */
-
-     form {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    input, select, textarea, button {
-        margin-bottom: 10px;
-        padding: 8px;
-        font-size: 16px;
-    }
-    .radio-group {
-        display: flex;
-        gap: 10px;
-    }
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    
-}
-
-.footerMap {
-    display: flex;
-    justify-content: center;     align-items: center;     margin-top: 1.25rem; }
-
-.footerMap iframe {
-    width: 80%;     max-width: 37.5rem; 
-    height: 25rem; 
-    border: none; }
