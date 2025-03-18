@@ -55,75 +55,78 @@
             </div>
         </div>
     </header>
-    <div class="central19">
-        <img src="/images/inicio-arquimart.png" alt="inicio-arquimart">
-    </div>
-    <section class="sectionindice">
-        <div class="contenedorinicio">
-            <article class="articulo1">
+    <div class="contenedor-principal">
 
-                <p>Pantaila, itxitura eta altzari bereziak diseinatu eta fabrikatzen ditugu; bulego-zatiketak eta barne-zatiketa-sistemak lan-eremuan erosotasuna areagotzeko diseinatuta.</p>
-                <ul>
-                    <li>Biomboak</li>
-                    <li>Ofizina banaketak</li>
-                    <li>Mamparak</li>
-                    <li>Maketak</li>
-                </ul>
-                <img class="img1" src="/images/indicearticulo3.jpg" alt="biombo">
-                <img class="img2" src="/images/productos-propios.png" alt="productos-propios">
-                <img class="img3" src="/images/indice-articulo4.jpg" alt="productos-propios">
-
-
-            </article>
-            <article class="articulo2">
-                <p> <strong>Ingurune berritzaileetarako proposamenak.</strong> Arquimart-en erosotasunak eta teknologiak protagonismo berezia hartzen duten espazio berritzaileak sortzeko gai diren erantzunak diseinatzen ditugu. Lehenesten duten lan edo bilera eremuak
-                    argi naturala, edozein telekomunikazio-sistema edo urrutiko jarduera sartzeko gai dena, beirateen eta material nobleen bidez guztiz isolatua pribatutasun handiagoaren bila eta irekia edo erdi irekia denean.
-                    Gardentasuna dena da.</p>
-                <img class="img4" src="/images/ind-article2.jpg" alt="productos-propios">
-            </article>
+        <div class="central19">
+            <!-- Arquimart-en irudi zaharra -->
+            <img src="/images/arquimart_sist.jpg" alt="inicio-arquimart">
         </div>
-    </section>
-    <h2 class="h2indice">Arquimart Systems-en parte izan nahi dut </h2>
-    <div class="fondoformulario">
-        <div class="form-container">
-            <form action="/submit_form" method="post" class="form_form">
-                <label for="suscripcion" class="privacidad">Sistemas Arquimart-en pribatutasun politika onartzen dut</label>
-                <div class="form_checkbox_container">
-                    <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox">
-                </div>
-                <label for="dni">DNI:</label>
-                <input type="text" id="dni" name="dni" placeholder="Por favor, ingrese su DNI">
-                <label for="dep" class="depart">Saila:</label>
-                <select id="dep" name="dep" class="form_select">
-                    <option value="sis">Sistemak</option>
-                    <option value="pma">Egurrezko Peoia</option>
-                    <option value="pme">Metalezko Peoia</option>
-                    <option value="tec">Teknikaria</option>
-                    <option value="Ad">Administrazioa</option>
-                    <option value="Otro">Beste bat</option>
-                </select>
-                <br>
-                <br>
-                <label>Generoa:</label>
-                <br>
-                <label for="masc">Gizonezkoa</label>
-                <input type="radio" id="masc" name="gen" value="masc">
-                <br>
-                <label for="fem">Emakumezkoa</label>
-                <input type="radio" id="fem" name="gen" value=",fem">
-                <br>
-                <label for="comentario">Komentarioa:</label>
-                <br>
-                <textarea id="comentario" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea>
-                <br>
-                <label for="pdf" class="adjuntar">PDF erantsi:</label>
-                <input type="file" id="pdf" name="pdf" class="form_input">
-                <br>
-                <br>
-                <input type="submit" value="Enviar" class="form_submit">
-            </form>
+        <section class="sectionindice">
+            <div class="contenedorinicio">
+                <article class="articulo1">
+                    <div class="textoindice">
+                        <p>Banaketak, itxiturak eta altzari bereziak diseinatu eta fabrikatzen ditugu; bulegoetako banaketak eta barruko espazioak zatitzeko sistemak, lan-eremuko erosotasuna hobetzeko diseinatuak.</p>
+                    </div>
+                    <!-- Irudidun tituluak -->
+                    <div>
+                        <div class="imagenes">
+                            <div><h1>Pantailak</h1> <img class="img1" src="/images/indicearticulo3.jpg" alt="biombo"></div>
+                            <div><h1>Maketak</h1><img class="img2" src="/images/productos-propios.png" alt="productos-propios"></div>
+                            <div><h1>Banaketak</h1><img class="img3" src="/images/indice-articulo4.jpg" alt="productos-propios"></div> 
+                        </div>
+                    </div>
+                </article>
+                <!-- 2. artikulua diseinu ezberdinarekin -->
+                <article class="articulo2">
+                    <p> <strong>Ingurune berritzaileen proposamenak.</strong> Arquimart-en, erosotasuna eta teknologia protagonista nagusi diren espazio berritzaileak sortzeko gai diren irtenbideak diseinatzen ditugu. Argitasun naturala lehenesten duten lan- edo topaguneak, edozein telekomunikazio sistema edo urruneko jarduera integratzeko gai direnak, beiraz eta material nobleekin guztiz isolatuak intimitate handiagoa bilatzeko, eta guztiz irekiak edo erdi-irekiak gardentasuna dena denean.</p>
+                    <img class="img4" src="/images/ind-article2.jpg" alt="productos-propios" id="idimg4">
+                </article>
+            </div>
+        </section>
+        <h2 class="h2indice">Sistemas Arquimart-en parte izan nahi dut</h2>
+        <!-- Arquimart-en parte izateko formularioa -->
+        <div class="fondoformulario">
+            <div class="form-container">
+                <form action="/submit_form" method="post" class="form_form">
+                    <label for="suscripcion" class="privacidad">Sistemas Arquimart-en pribatutasun politika onartzen dut</label>
+                    <div class="form_checkbox_container">
+                        <input type="checkbox" id="suscripcion" name="suscripcion" value="Bai" class="form_checkbox">
+                    </div>
+                    <label for="dni">NAN:</label>
+                    <input type="text" id="dni" name="dni" placeholder="Mesedez, sartu zure NAN">
+                    <label for="dep" class="depart">Saila:</label>
+                    <select id="dep" name="dep" class="form_select">
+                        <option value="sis">Sistemak</option>
+                        <option value="pma">Zurgin Laguntzailea</option>
+                        <option value="pme">Metalgintzako Laguntzailea</option>
+                        <option value="tec">Teknikaria</option>
+                        <option value="Ad">Administrazioa</option>
+                        <option value="Otro">Bestelakoa</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Generoa:</label>
+                    <br>
+                    <label for="masc">Gizonezkoa</label>
+                    <input type="radio" id="masc" name="gen" value="masc">
+                    <br>
+                    <label for="fem">Emakumezkoa</label>
+                    <input type="radio" id="fem" name="gen" value="fem">
+                    <br>
+                    <label for="comentario">Iruzkina:</label>
+                    <br>
+                    <textarea id="comentario" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea>
+                    <br>
+                    <label for="pdf" class="adjuntar">PDF erantsi:</label>
+                    <input type="file" id="pdf" name="pdf" class="form_input">
+                    <br>
+                    <br>
+                    <input type="submit" value="Bidali" class="form_submit">
+                </form>
+            </div>
         </div>
     </div>
+    
     <footer>
         <div class="footerContainer">
             <div class="footerColumn">

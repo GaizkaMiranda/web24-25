@@ -56,75 +56,78 @@
             </div>
         </div>
     </header>
-    <div class="central19">
-        <img src="/images/inicio-arquimart.png" alt="inicio-arquimart">
-    </div>
-    <section class="sectionindice">
-        <div class="contenedorinicio">
-            <article class="articulo1">
+    <div class="contenedor-principal">
 
-                <p>We design and manufacture screens, enclosures and special furniture; office divisions and interior partitioning systems designed to increase comfort in the work area.</p>
-                <ul>
-                    <li>Screens</li>
-                    <li>Divisions</li>
-                    <li>Offices</li>
-                    <li>Mockups</li>
-                </ul>
-                <img class="img1" src="/images/indicearticulo3.jpg" alt="biombo">
-                <img class="img2" src="/images/productos-propios.png" alt="productos-propios">
-                <img class="img3" src="/images/indice-articulo4.jpg" alt="productos-propios">
-
-
-            </article>
-            <article class="articulo2">
-                <p> <strong>Proposals for innovative environments.</strong>At Arquimart we design responses capable of creating innovative spaces where comfort and technology take on a special role. Work or meeting areas that prioritize
-                    natural light, capable of incorporating any telecommunication system or remote activity, completely isolated through glazing and noble materials in search of greater privacy and open or semi-open when
-                    Transparency is everything.</p>
-                <img class="img4" src="/images/ind-article2.jpg" alt="productos-propios">
-            </article>
+        <div class="central19">
+            <!-- Old image of Arquimart -->
+            <img src="/images/arquimart_sist.jpg" alt="inicio-arquimart">
         </div>
-    </section>
-    <h2 class="h2indice">I want to be part of Arquimart Systems </h2>
-    <div class="fondoformulario">
-        <div class="form-container">
-            <form action="/submit_form" method="post" class="form_form">
-                <label for="suscripcion" class="privacidad">Acepto la política de privacidad de Sistemas Arquimart</label>
-                <div class="form_checkbox_container">
-                    <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox">
-                </div>
-                <label for="dni">ID:</label>
-                <input type="text" id="dni" name="dni" placeholder="Por favor, ingrese su DNI">
-                <label for="dep" class="depart">Department:</label>
-                <select id="dep" name="dep" class="form_select">
-                    <option value="sis">Sistems</option>
-                    <option value="pma">Wooden Pawn</option>
-                    <option value="pme">Metal Pawn</option>
-                    <option value="tec">Tecnic</option>
-                    <option value="Ad">Administration</option>
-                    <option value="Otro">Other</option>
-                </select>
-                <br>
-                <br>
-                <label>Gender:</label>
-                <br>
-                <label for="masc">Male</label>
-                <input type="radio" id="masc" name="gen" value="masc">
-                <br>
-                <label for="fem">Female</label>
-                <input type="radio" id="fem" name="gen" value=",fem">
-                <br>
-                <label for="comentario">Note:</label>
-                <br>
-                <textarea id="comentario" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea>
-                <br>
-                <label for="pdf" class="adjuntar">Attach PDF:</label>
-                <input type="file" id="pdf" name="pdf" class="form_input">
-                <br>
-                <br>
-                <input type="submit" value="Enviar" class="form_submit">
-            </form>
+        <section class="sectionindice">
+            <div class="contenedorinicio">
+                <article class="articulo1">
+                    <div class="textoindice">
+                        <p>We design and manufacture partitions, enclosures, and special furniture; office divisions and interior compartmentalization systems designed to enhance comfort in the workplace.</p>
+                    </div>
+                    <!-- Titles with images -->
+                    <div>
+                        <div class="imagenes">
+                            <div><h1>Screens</h1> <img class="img1" src="/images/indicearticulo3.jpg" alt="biombo"></div>
+                            <div><h1>Models</h1><img class="img2" src="/images/productos-propios.png" alt="productos-propios"></div>
+                            <div><h1>Divisions</h1><img class="img3" src="/images/indice-articulo4.jpg" alt="productos-propios"></div> 
+                        </div>
+                    </div>
+                </article>
+                <!-- Article 2 with a different design -->
+                <article class="articulo2">
+                    <p> <strong>Innovative environment proposals.</strong> At Arquimart, we design solutions capable of creating innovative spaces where comfort and technology play a key role. Work or meeting areas that prioritize natural light, capable of incorporating any telecommunication system or remote activity, fully isolated through glass and noble materials for greater privacy, and open or semi-open when transparency is everything.</p>
+                    <img class="img4" src="/images/ind-article2.jpg" alt="productos-propios" id="idimg4">
+                </article>
+            </div>
+        </section>
+        <h2 class="h2indice">I want to be part of Sistemas Arquimart</h2>
+        <!-- Start form to join Arquimart -->
+        <div class="fondoformulario">
+            <div class="form-container">
+                <form action="/submit_form" method="post" class="form_form">
+                    <label for="suscripcion" class="privacidad">I accept the privacy policy of Sistemas Arquimart</label>
+                    <div class="form_checkbox_container">
+                        <input type="checkbox" id="suscripcion" name="suscripcion" value="Yes" class="form_checkbox">
+                    </div>
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" placeholder="Please enter your DNI">
+                    <label for="dep" class="depart">Department:</label>
+                    <select id="dep" name="dep" class="form_select">
+                        <option value="sis">Systems</option>
+                        <option value="pma">Wood Worker</option>
+                        <option value="pme">Metal Worker</option>
+                        <option value="tec">Technician</option>
+                        <option value="Ad">Administration</option>
+                        <option value="Otro">Other</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Gender:</label>
+                    <br>
+                    <label for="masc">Male</label>
+                    <input type="radio" id="masc" name="gen" value="masc">
+                    <br>
+                    <label for="fem">Female</label>
+                    <input type="radio" id="fem" name="gen" value="fem">
+                    <br>
+                    <label for="comentario">Comment:</label>
+                    <br>
+                    <textarea id="comentario" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea>
+                    <br>
+                    <label for="pdf" class="adjuntar">Attach PDF:</label>
+                    <input type="file" id="pdf" name="pdf" class="form_input">
+                    <br>
+                    <br>
+                    <input type="submit" value="Send" class="form_submit">
+                </form>
+            </div>
         </div>
     </div>
+    
     <footer>
         <div class="footerContainer">
             <div class="footerColumn">

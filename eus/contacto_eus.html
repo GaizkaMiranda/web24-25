@@ -56,45 +56,63 @@
             </div>
         </div>
     </header>    <nav class="navbar">
-        <!-- Navigazio menua -->
-    </nav>
-
-    <div class="central">
-        <h2>Kontaktua</h2>
-        <div class="contact-info">
-            <!-- Kontaktu informazioa -->
-            <p><strong>Helbidea:</strong> Guachupa Kalea, 14, Vitoria-Gasteiz, Euskal Herria</p>
-            <p><strong>Telefonoa:</strong> +34 123 456 789</p>
-            <p><strong>Emaila:</strong> info@arquimartit.com</p>
-            <p><strong>Ordutegia:</strong> Astelehenetik ostiralera: 8:00etatik - 18:00etara</p>
+        <div class="contenedor-principal-contacto">
+            <!-- Berrikuntzen alboko atala -->
+            <aside>
+                <ul class="lista-aside" style="list-style-type: none;">
+                    <h1>Berrikuntzak!</h1>
+                    <!-- Bi esteka compartimentacion.html-era -->
+                    <li class="item">
+                        <a class="enlace-aside" href="/compartimentacion.html" target="_blank">
+                            <img src="/images/actualic.jpg" alt="Bezeroa 1">Eguneratzeak
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="enlace-aside" href="/compartimentacion.html" target="_blank">
+                            <img  src="/images/promo.png" alt="Bezeroa 2">Promozioak
+                        </a>
+                    </li>
+                    <li class="item">
+                        <!-- Bi esteka arquimart.es-era -->
+                        <a class="enlace-aside" href="https://www.arquimart.es" target="_blank">
+                            <img src="/images/noti.png" alt="Bezeroa 3">Berriak
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="enlace-aside" href="https://www.arquimart.es" target="_blank">
+                            <img src="/images/suscri.png" alt="Bezeroa 4">Harpidetzak
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+    
+            <!-- Eduki nagusia (kontaktua eta formularioa) -->
+            <div class="central">
+                <h2>Kontaktua</h2>
+                <div class="contact-info">
+                    <!-- Kontakturako informazioa -->
+                    <p><strong>Helbidea:</strong> Polígono Industrial Ansoleta, Aitzgorri, 6, Vitoria-Gasteiz</p>
+                    <p><strong>Telefonoa:</strong> +34 123 456 789</p>
+                    <p><strong>Posta Elektronikoa:</strong> arquimart@arquimart.com</p>
+                </div>
+                <div>
+                    <!-- Kontaktu formularioa -->
+                    <h3>Bidal iezaguzu mezua</h3>
+                    <form action="enviar_mensaje.php" method="post" class="formulario-contacto">
+                        <label for="nombre">Izena:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="email">Posta Elektronikoa:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="telefono">Telefonoa:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                        <label for="mensaje">Mezua:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                        <input type="submit" value="Bidali">
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <div class="contact-form">
-            <!-- Kontaktu inprimakia -->
-            <h3>Bidali mezua</h3>
-            <form action="mezua_bidali.php" method="post">
-                <label for="izena">Izena:</label>
-                <input type="text" id="izena" name="izena" required>
-        
-                <label for="emaila">Emaila:</label>
-                <input type="email" id="emaila" name="emaila" required>
-        
-                <label for="telefonoa">Telefonoa:</label>
-                <input type="tel" id="telefonoa" name="telefonoa">
-        
-                <label for="jaiotze-data">Jaiotze data:</label>
-                <input type="date" id="jaiotze-data" name="jaiotze-data" required>
-        
-                <label for="mezua">Mezua:</label>
-                <textarea id="mezua" name="mezua" rows="4" cols="50" required></textarea>
-        
-                <input type="submit" value="Bidali">
-            </form>
-        </div>
-        
-
-        
-    </div>
+    
 
     <footer>
         <div class="footerContainer">
