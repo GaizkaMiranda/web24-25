@@ -7,8 +7,11 @@
       <link rel="stylesheet" href="css/estilos.css">
       <link rel="icon" type="image/x-icon" href="/images/logo.png">
    </head>
+   <!-- a esta página solo se accede desde las imagenes de productos -->
    <body class="bodycomp">
     <header>
+    <!-- inicio de navbar del header para navegar entre páginas -->
+
         <div class="primero">
                 <a href="/index.html"><img src="/images/inicio-arquimart.png" alt="logo" width="300" height="50"></a>
             
@@ -37,6 +40,8 @@
                                 <img src="/images/contacto.png" alt="Contacto" width="20" height="20">
                                 Contacto
                             </a>
+                        <!-- En esta página no damos la opción de traducir con opciones de idioma -->
+
                         </li>
                        
                     </ul>
@@ -44,6 +49,7 @@
         </div>
     </header>
     <div class="contenedor-principal">
+        <!-- div con todas las opciones y su texto-->
 
       
       <section class="containercomp">
@@ -71,7 +77,8 @@
          <div class="footerContainer">
             <div class="footerColumn">
                <h3>Web</h3>
-               <!-- ÍNDICE DA LA IZQ QUE LLEVA A OTRAS PÁGINAS HTML -->
+                <!-- columna vertical de la web -->
+
                <ul>
                   <li><a href="/index.html" target="_blank">Inicio</a></li>
                   <li><a href="/nosotros.html" target="_blank">Acerca de nosotros</a></li>
@@ -80,7 +87,8 @@
                </ul>
             </div>
             <div class="footerColumn">
-               <!-- COLUMNA DEL MEDIO -->
+            <!-- columna vertical de la dirección -->
+
                <h3>Dirección</h3>
                <ul>
                   <li>Polígono Industrial Ansoleta, Aitzgorri, 6, Vitoria-Gasteiz</li>
@@ -89,7 +97,8 @@
                </ul>
             </div>
             <div class="footerColumn">
-               <!-- COLUMNA DE LA DERECHA -->
+            <!-- columna vertical de la satisfacción -->
+
                <h3>Nivel de satisfacción con nuestra web</h3>
                <div class="satisfaccion">
                   <a class="muymal"> <img src="images/muymal.jpg" alt="muymal"></a>
@@ -97,20 +106,6 @@
                   <a  class="bien"><img src="images/bien.jpg" alt="bien"></a>
                   <a  class="muybien"><img src="images/muybien.jpg" alt="muybien"></a>
                </div>
-               <script>
-                  // Obtener todas las imágenes
-                  const imagenes = document.querySelectorAll('.satisfaccion img');
-                  
-                  // Función para mostrar el mensaje
-                  function mostrarMensaje() {
-                      alert("Gracias por tu valoración");
-                  }
-                  
-                  // Agregar evento de clic a cada imagen
-                  imagenes.forEach(imagen => {
-                      imagen.addEventListener('click', mostrarMensaje);
-                  });
-               </script>
             </div>
          </div>
          <div class="copyright">

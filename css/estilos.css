@@ -459,6 +459,15 @@ button {
 
 /* ESTILOS contacto.html */
 
+.contenedor-principal-contacto {
+    display: flex; /* Activa Flexbox */
+    gap: 40px; /* Espacio entre aside y contenido */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+  
 .central,
 iframe {
 	margin: 0 auto;
@@ -479,11 +488,18 @@ iframe {
 	margin-bottom: 20px;
 }
 
-.lista-aside {
-	width: 26rem;
-}
 
+.lista-aside {
+    width: 300px; 
+    position: sticky;
+    top: 20px; /* Para que quede fijo al hacer scroll */
+    background: #fff; /* Fondo para mejor contraste */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 .item {
+	
 	background-color: #DDD;
 	padding: 1em;
 	margin-bottom: .2em;
@@ -494,6 +510,7 @@ iframe {
 }
 
 .enlace-aside {
+	width: 100%;
 	background-color: #fff;
 	padding: 4px 6px;
 	cursor: pointer;
