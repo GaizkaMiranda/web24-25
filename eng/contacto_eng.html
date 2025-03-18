@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
 </head>
+
 <body>
     <header>
         <div class="primero">
@@ -19,26 +20,22 @@
                     <ul class="nav-links">
                         <li>
                             <a href="/eng/index_eng.html">
-                                <img src="/images/casa.jpg" alt="Index" width="20" height="20">
-                                Index
+                                <img src="/images/casa.jpg" alt="Index" width="20" height="20"> Index
                             </a>
                         </li>
                         <li>
                             <a href="/eng/nosotros_eng.html">
-                                <img src="/images/nosotros.png" alt="About Us" width="20" height="20">
-                                About Us
+                                <img src="/images/nosotros.png" alt="About Us" width="20" height="20"> About Us
                             </a>
                         </li>
                         <li>
                             <a href="/eng/productos_eng.html">
-                                <img src="/images/productos.png" alt="Products/Services" width="20" height="20">
-                                Products/Services
+                                <img src="/images/productos.png" alt="Products/Services" width="20" height="20"> Products/Services
                             </a>
                         </li>
                         <li>
                             <a href="/eng/contacto_eng.html">
-                                <img src="/images/contacto.png" alt="Contact" width="20" height="20">
-                                Contact
+                                <img src="/images/contacto.png" alt="Contact" width="20" height="20"> Contact
                             </a>
                         </li>
                         <li class="idioma">
@@ -53,78 +50,63 @@
             </div>
         </div>
     </header>
-    <div class="main-container">
+    <div class="contenedor-principal-contacto">
+        <!-- News aside -->
+        <aside>
+            <ul class="lista-aside" style="list-style-type: none;">
+                <h1>News!</h1>
+                <!-- two links to compartimentacion.html -->
+                <li class="item">
+                    <a class="enlace-aside" href="/compartimentacion.html" target="_blank">
+                        <img src="/images/actualic.jpg" alt="Client 1">Updates
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="enlace-aside" href="/compartimentacion.html" target="_blank">
+                        <img src="/images/promo.png" alt="Client 2">Promotions
+                    </a>
+                </li>
+                <li class="item">
+                    <!-- two links to arquimart.es -->
+                    <a class="enlace-aside" href="https://www.arquimart.es" target="_blank">
+                        <img src="/images/noti.png" alt="Client 3">News
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="enlace-aside" href="https://www.arquimart.es" target="_blank">
+                        <img src="/images/suscri.png" alt="Client 4">Subscription
+                    </a>
+                </li>
+            </ul>
+        </aside>
 
-        <div class="central19">
-            <!-- Old Arquimart image -->
-            <img src="images/arquimart_sist.jpg" alt="arquimart-home">
-        </div>
-        <section class="section-index">
-            <div class="start-container">
-                <article class="article1">
-                    <div class="text-index">
-                        <p>We design and manufacture partitions, enclosures, and special furniture; office divisions and interior partitioning systems designed to enhance comfort in the workplace.</p>
-                    </div>
-                    <!-- Titles with images -->
-                    <div>
-                        <div class="images">
-                            <div><h1>Partitions</h1> <img class="img1" src="/images/indicearticulo3.jpg" alt="partition"></div>
-                            <div><h1>Models</h1> <img class="img2" src="images/productos-propios.png" alt="custom-products"></div>
-                            <div><h1>Divisions</h1> <img class="img3" src="images/indice-articulo4.jpg" alt="custom-products"></div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Article 2 with a different design -->
-                <article class="article2">
-                    <p> <strong>Innovative environment proposals.</strong> At Arquimart, we design solutions capable of creating innovative spaces where comfort and technology play a key role. Work or meeting areas that prioritize natural light, can integrate any telecommunication system or remote activity, completely isolated through glass and high-quality materials for greater privacy, or open and semi-open when transparency is essential.</p>
-                    <img class="img4" src="images/ind-article2.jpg" alt="custom-products" id="idimg4">
-                </article>
+        <!-- Central content (contact and form) -->
+        <div class="central">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <!-- Contact information -->
+                <p><strong>Address:</strong> Polígono Industrial Ansoleta, Aitzgorri, 6, Vitoria-Gasteiz</p>
+                <p><strong>Phone:</strong> +34 123 456 789</p>
+                <p><strong>Email:</strong> arquimart@arquimart.com</p>
             </div>
-        </section>
-        <h2 class="h2-index">I want to be part of Sistemas Arquimart</h2>
-        <!-- Start of the join Arquimart form -->
-        <div class="form-background">
-            <div class="form-container">
-                <form action="/submit_form" method="post" class="form_form">
-                    <label for="subscription" class="privacy">I accept the privacy policy of Sistemas Arquimart</label>
-                    <div class="form_checkbox_container">
-                        <input type="checkbox" id="subscription" name="subscription" value="Yes" class="form_checkbox">
-                    </div>
-                    <label for="dni">DNI:</label>
-                    <input type="text" id="dni" name="dni" placeholder="Please enter your DNI">
-                    <label for="dep" class="department">Department:</label>
-                    <select id="dep" name="dep" class="form_select">
-                        <option value="sis">Systems</option>
-                        <option value="pma">Woodworker</option>
-                        <option value="pme">Metalworker</option>
-                        <option value="tec">Technician</option>
-                        <option value="Ad">Administration</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label>Gender:</label>
-                    <br>
-                    <label for="male">Male</label>
-                    <input type="radio" id="male" name="gen" value="male">
-                    <br>
-                    <label for="female">Female</label>
-                    <input type="radio" id="female" name="gen" value="female">
-                    <br>
-                    <label for="comment">Comment:</label>
-                    <br>
-                    <textarea id="comment" name="message" rows="4" cols="50" class="form_textarea"></textarea>
-                    <br>
-                    <label for="pdf" class="attach">Attach PDF:</label>
-                    <input type="file" id="pdf" name="pdf" class="form_input">
-                    <br>
-                    <br>
-                    <input type="submit" value="Send" class="form_submit">
+            <div>
+                <!-- Contact form -->
+                <h3>Send us a message</h3>
+                <form action="enviar_mensaje.php" method="post" class="formulario-contacto">
+                    <label for="nombre">Name:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telefono">Phone:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                    <label for="mensaje">Message:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                    <input type="submit" value="Send">
                 </form>
             </div>
         </div>
     </div>
-    
+
     <footer>
         <div class="footerContainer">
             <div class="footerColumn">
@@ -147,10 +129,10 @@
             <div class="footerColumn">
                 <h3>Level of Satisfaction</h3>
                 <div class="satisfaccion">
-                    <a class="muymal"> <img src="/img/muymal.jpg" alt="Very Bad"></a>
-                    <a class="regular"><img src="/img/regular.jpg" alt="Regular"></a>
-                    <a class="bien"><img src="/img/bien.jpg" alt="Good"></a>
-                    <a class="muybien"><img src="/img/muybien.jpg" alt="Very Good"></a>
+                    <a class="muymal"> <img src="/images/muymal.jpg" alt="Very Bad"></a>
+                    <a class="regular"><img src="/images/regular.jpg" alt="Regular"></a>
+                    <a class="bien"><img src="/images/bien.jpg" alt="Good"></a>
+                    <a class="muybien"><img src="/images/muybien.jpg" alt="Very Good"></a>
                 </div>
             </div>
         </div>
@@ -159,4 +141,5 @@
         </div>
     </footer>
 </body>
+
 </html>
