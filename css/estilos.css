@@ -450,6 +450,30 @@ button {
 }
 
 
+/* Responsive del body del index.html */
+
+@media screen and (max-width: 800px) {
+	.imgantigua {
+		display: none;
+	}
+	.imagenes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		/* espacio entre los elementos */
+	}
+	.imagenes div {
+		text-align: center;
+	}
+	.imagenes img {
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+	}
+}
+
+
 /* ESTILOS contacto.html */
 
 .contenedor-principal-contacto {
@@ -578,6 +602,69 @@ iframe {
 	background-color: #0056b3;
 }
 
+
+/* Esponsive del body de contacto.html */
+
+
+/* Me enfoco en alinearlos en vertical e intentar no perder nada importante */
+
+@media screen and (max-width: 800px) {
+	.contenedor-principal-contacto {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* al final como es un aside no me lo alinea en el dentro por mucho que se lo ponga */
+		text-align: center;
+	}
+	aside {
+		width: 100%;
+		padding: 10px;
+	}
+	.lista-aside h1 {
+		font-size: 18px;
+	}
+	.item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid #ccc;
+		padding: 8px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+	}
+	.enlace-aside {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 14px;
+	}
+	/* Lo más importante para que la imagen no sea excesivamente grande porque si no ocupa demasidao */
+	.enlace-aside img {
+		width: 40px;
+		height: 40px;
+		margin-bottom: 5px;
+	}
+	.central {
+		width: 100%;
+		padding: 10px;
+	}
+	.contact-info p {
+		font-size: 14px;
+	}
+	.formulario-contacto {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.formulario-contacto input,
+	.formulario-contacto textarea {
+		width: 100%;
+		padding: 8px;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	.nav-links li {
 		float: none;
@@ -683,6 +770,57 @@ iframe {
 .carta p {
 	margin-bottom: 10px;
 	color: #666;
+}
+
+
+/* Responsive del body de productos.html */
+
+@media screen and (max-width: 800px) {
+	.contenedor-principal {
+		align-items: center;
+		max-width: 800px;
+	}
+	.contenedor-principal h3,
+	p {
+		text-align: center;
+	}
+	.imagencompar,
+	.imgpr1,
+	.imgpr2,
+	.img-servicios {
+		max-width: 150px;
+		max-height: 150px;
+	}
+	.contenedor-principal {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 10px;
+	}
+	.h2-productos {
+		font-size: 18px;
+	}
+	.product-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+	.nuestros-servicios {
+		font-size: 18px;
+		text-align: center;
+	}
+	.img-servicios {
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+	}
+	.programas {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 }
 
 
@@ -875,6 +1013,44 @@ iframe {
 .año2012 p,
 .año2016 p {
 	text-align: left;
+}
+
+
+/* Responsive del body nosotros.html */
+
+@media screen and (max-width: 800px) {
+	.contenedor-principal {
+		align-items: center;
+	}
+	table {
+		max-width: 400px;
+		max-height: 400px;
+	}
+	.imagentabla {
+		/* quito la imagen de señalización ya que no considero que sea relevante */
+		display: none;
+	}
+	.projects-container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		/* Espacio entre los proyectos */
+	}
+	.cl1,
+	.cl2 {
+		width: 100%;
+		/* Para que ocupen todo el ancho disponible */
+	}
+	.comprometidos {
+		font-size: 1rem;
+	}
+	.contenedor-años {
+		max-width: 600px;
+	}
+	.contenedor-años img {
+		width: 200px;
+		height: 200px;
+	}
 }
 
 

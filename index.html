@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
 </head>
+
 <body>
     <header>
         <div class="primero">
@@ -20,26 +21,22 @@
                     <ul class="nav-links">
                         <li>
                             <a href="index.html">
-                                <img src="/images/casa.jpg" alt="Inicio" width="20" height="20">
-                                Inicio
+                                <img src="/images/casa.jpg" alt="Inicio" width="20" height="20"> Inicio
                             </a>
                         </li>
                         <li>
                             <a href="nosotros.html">
-                                <img src="/images/nosotros.png" alt="Sobre Nosotros" width="20" height="20">
-                                Sobre Nosotros
+                                <img src="/images/nosotros.png" alt="Sobre Nosotros" width="20" height="20"> Sobre Nosotros
                             </a>
                         </li>
                         <li>
                             <a href="productos.html">
-                                <img src="/images/productos.png" alt="Productos/Servicios" width="20" height="20">
-                                Productos/Servicios
+                                <img src="/images/productos.png" alt="Productos/Servicios" width="20" height="20"> Productos/Servicios
                             </a>
                         </li>
                         <li>
                             <a href="contacto.html">
-                                <img src="/images/contacto.png" alt="Contacto" width="20" height="20">
-                                Contacto
+                                <img src="/images/contacto.png" alt="Contacto" width="20" height="20"> Contacto
                             </a>
                         </li>
                         <!-- opciones de idioma -->
@@ -58,77 +55,80 @@
     <!-- contenedor principal para hacerle el max-width y así no ocupe toda la página -->
     <div class="contenedor-principal">
 
-    
-    <div class="central19">
-        <!-- Imagen antigua de arquimart -->
-        <img src="images/arquimart_sist.jpg" alt="inicio-arquimart">
-    </div>
-    <section class="sectionindice">
-        <div class="contenedorinicio">
-            <article class="articulo1">
-                <div class="textoindice">
-                    <p>Diseñamos y fabricamos mamparas, cerramientos y mobiliario especial; divisiones de oficinas y sistemas de compartimentación de interiores concebidos para aumentar el confort en el área de trabajo.</p>
-                </div>
-                <!-- titulos con las imagenes -->
-                <div>
-                    <div class="imagenes">
-                        <div><h1>Biombos</h1>    <img class="img1" src="/images/indicearticulo3.jpg" alt="biombo"></div>
-                        <div><h1>Maquetas</h1><img class="img2" src="images/productos-propios.png" alt="productos-propios"></div>
-                       <div><h1>Divisiones</h1><img class="img3" src="images/indice-articulo4.jpg" alt="productos-propios"></div> 
+
+        <div class="central19">
+            <!-- Imagen antigua de arquimart -->
+            <img class="imgantigua" src="images/arquimart_sist.jpg" alt="inicio-arquimart">
+        </div>
+        <section class="sectionindice">
+            <div class="contenedorinicio">
+                <article class="articulo1">
+                    <div class="textoindice">
+                        <p>Diseñamos y fabricamos mamparas, cerramientos y mobiliario especial; divisiones de oficinas y sistemas de compartimentación de interiores concebidos para aumentar el confort en el área de trabajo.</p>
                     </div>
-                </div>
-            </article>
-            <!-- articulo 2 con otro diseño -->
-            <article class="articulo2">
-                <p> <strong>Propuestas de ambientes innovadores.</strong> En Arquimart diseñamos respuestas capaces de crear espacios innovadores donde el confort y la tecnología cobran un especial protagonismo. Zonas de trabajo o encuentro que priorizan
-                    la luz natural, capaces de incorporar cualquier sistema de telecomunicación o actividad en remoto, aisladas por completo a través de acristalamientos y materiales nobles en busca de mayor intimidad y abiertas o semiabiertas cuando
-                    la transparencia lo es todo.</p>
-                <img class="img4" src="images/ind-article2.jpg" alt="productos-propios"  id="idimg4">
-            </article>
+                    <!-- titulos con las imagenes -->
+                    <div>
+                        <div class="imagenes">
+                            <div>
+                                <h1>Biombos</h1> <img class="img1" src="/images/indicearticulo3.jpg" alt="biombo"></div>
+                            <div>
+                                <h1>Maquetas</h1><img class="img2" src="images/productos-propios.png" alt="productos-propios"></div>
+                            <div>
+                                <h1>Divisiones</h1><img class="img3" src="images/indice-articulo4.jpg" alt="productos-propios"></div>
+                        </div>
+                    </div>
+                </article>
+                <!-- articulo 2 con otro diseño -->
+                <article class="articulo2">
+                    <p> <strong>Propuestas de ambientes innovadores.</strong> En Arquimart diseñamos respuestas capaces de crear espacios innovadores donde el confort y la tecnología cobran un especial protagonismo. Zonas de trabajo o encuentro que priorizan
+                        la luz natural, capaces de incorporar cualquier sistema de telecomunicación o actividad en remoto, aisladas por completo a través de acristalamientos y materiales nobles en busca de mayor intimidad y abiertas o semiabiertas cuando
+                        la transparencia lo es todo.</p>
+                    <img class="img4" src="images/ind-article2.jpg" alt="productos-propios" id="idimg4">
+                </article>
+            </div>
+        </section>
+        <h2 class="h2indice">Quiero formar parte de Sistemas Arquimart </h2>
+        <!-- inicio formulario de formar parte en arquimart -->
+        <div class="fondoformulario">
+            <div class="form-container">
+                <form action="/submit_form" method="post" class="form_form">
+                    <label for="suscripcion" class="privacidad">Acepto la política de privacidad de Sistemas Arquimart</label>
+                    <div class="form_checkbox_container">
+                        <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox">
+                    </div>
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" placeholder="Por favor, ingrese su DNI">
+                    <label for="dep" class="depart">Departamento:</label>
+                    <select id="dep" name="dep" class="form_select">
+                        <option value="sis">Sistemas</option>
+                        <option value="pma">Peón Madera</option>
+                        <option value="pme">Peón Metal</option>
+                        <option value="tec">Técnico</option>
+                        <option value="Ad">Administración</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Género:</label>
+                    <br>
+                    <label for="masc">Másculino</label>
+                    <input type="radio" id="masc" name="gen" value="masc">
+                    <br>
+                    <label for="fem">Femenino</label>
+                    <input type="radio" id="fem" name="gen" value=",fem">
+                    <br>
+                    <label for="comentario">Comentario:</label>
+                    <br>
+                    <textarea id="comentario" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea>
+                    <br>
+                    <label for="pdf" class="adjuntar">Adjuntar PDF:</label>
+                    <input type="file" id="pdf" name="pdf" class="form_input">
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar" class="form_submit">
+                </form>
+            </div>
         </div>
-    </section>
-    <h2 class="h2indice">Quiero formar parte de Sistemas Arquimart </h2>
-    <!-- inicio formulario de formar parte en arquimart -->
-    <div class="fondoformulario">
-        <div class="form-container">
-            <form action="/submit_form" method="post" class="form_form">
-                <label for="suscripcion" class="privacidad">Acepto la política de privacidad de Sistemas Arquimart</label>
-                <div class="form_checkbox_container">
-                    <input type="checkbox" id="suscripcion" name="suscripcion" value="Si" class="form_checkbox">
-                </div>
-                <label for="dni">DNI:</label>
-                <input type="text" id="dni" name="dni" placeholder="Por favor, ingrese su DNI">
-                <label for="dep" class="depart">Departamento:</label>
-                <select id="dep" name="dep" class="form_select">
-                    <option value="sis">Sistemas</option>
-                    <option value="pma">Peón Madera</option>
-                    <option value="pme">Peón Metal</option>
-                    <option value="tec">Técnico</option>
-                    <option value="Ad">Administración</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <br>
-                <br>
-                <label>Género:</label>
-                <br>
-                <label for="masc">Másculino</label>
-                <input type="radio" id="masc" name="gen" value="masc">
-                <br>
-                <label for="fem">Femenino</label>
-                <input type="radio" id="fem" name="gen" value=",fem">
-                <br>
-                <label for="comentario">Comentario:</label>
-                <br>
-                <textarea id="comentario" name="mensaje" rows="4" cols="50" class="form_textarea"></textarea>
-                <br>
-                <label for="pdf" class="adjuntar">Adjuntar PDF:</label>
-                <input type="file" id="pdf" name="pdf" class="form_input">
-                <br>
-                <br>
-                <input type="submit" value="Enviar" class="form_submit">
-            </form>
-        </div>
-    </div>
     </div>
     <!-- inicio footer con todas las opciones -->
     <footer>
@@ -154,7 +154,7 @@
                 </ul>
             </div>
             <div class="footerColumn">
-               <!-- columna vertical de la satisfacción -->
+                <!-- columna vertical de la satisfacción -->
 
                 <h3>Nivel de satisfacción con nuestra web</h3>
                 <div class="satisfaccion">
